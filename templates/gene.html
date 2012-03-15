@@ -1,9 +1,5 @@
-<html>
-<head>
-<title>Human OsteoSarcoma DataBase</title>
-</head>
+{% include 'includes/header.html' %}
 
-<body>
 {% for gene in selectedGenes%}
 <h1>{{gene.officalSymbal}}</h1>
 <ul>
@@ -18,5 +14,4 @@
 </ul>
 {% endfor%}
 
-</body>
-</html>
+{% include 'includes/footer.html' %}
