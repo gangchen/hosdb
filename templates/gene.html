@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Human OsteoSarcoma DataBase</title>
+</head>
+
+<body>
+{% for gene in selectedGenes%}
+<h1>{{gene.officalSymbal}}</h1>
+<ul>
+<li>Gene ID: {{gene.geneId}}</li>
+<li>Official Full Name: {{gene.officalFullName}}</li>
+<li>Aliases: {{gene.otherAliases}}</li>
+<li>Type: {{gene.geneType}}</li>
+<li>Organism: {{gene.organism}}</li>
+<li>Chromosome: {{gene.chromosome}}</li>
+<li>Localtion: {{gene.location}}</li>
+<li>Summary: {{gene.summary}}</li>
+</ul>
+{% endfor%}
+
+</body>
+</html>

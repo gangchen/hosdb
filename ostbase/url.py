@@ -14,6 +14,7 @@ urlpatterns = patterns('ostbase.views',
 
     # Uncomment the next line to enable the admin:
     url(r'^$', 'genes'),
+    url(r'^(.+)$', 'selectedGene'),
     #url(r'^(?P<poll_id>\d+)/$', 'detail'),
     #url(r'^(?P<poll_id>\d+)/results/$', 'results'),
     #url(r'^(?P<poll_id>\d+)/vote/$', 'vote'),

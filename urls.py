@@ -16,6 +16,6 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
     # url(r'^ostbase/', include('ostbase.url')),
-    url('^genes/$', include('ostbase.url')),
+    url('^gene/', include('ostbase.url')),
     url('^$', index),
 )
