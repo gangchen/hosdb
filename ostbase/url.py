@@ -1,4 +1,4 @@
-from django.conf.urls.defaults import patterns, include, url
+from django.conf.urls.defaults import *
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -13,7 +13,7 @@ urlpatterns = patterns('ostbase.views',
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    url(r'^$', 'index'),
+    url(r'^$', 'genes'),
     #url(r'^(?P<poll_id>\d+)/$', 'detail'),
     #url(r'^(?P<poll_id>\d+)/results/$', 'results'),
     #url(r'^(?P<poll_id>\d+)/vote/$', 'vote'),
