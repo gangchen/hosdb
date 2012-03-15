@@ -1,3 +1,9 @@
+import os
+import django
+
+SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
+
+
 # Django settings for mysite project.
 
 DEBUG = True
@@ -103,7 +109,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'hosdb.urls'
 
 TEMPLATE_DIRS = (
-    '/home/administrator/Desktop/hosdb',
+    os.path.join(SITE_ROOT, ""),
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
