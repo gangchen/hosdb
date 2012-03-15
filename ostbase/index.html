@@ -1,0 +1,32 @@
+{% if latest_account_list %}
+    <table border="1" align="center">
+    <tr>
+        <td>id</td>
+        <td>geneId</td>
+        <td>officalSymbal</td>
+        <td>officalFullName</td>
+        <td>otherAliases</td>
+        <td>geneType</td>
+        <td>organism</td>
+        <td>chromosome</td>
+        <td>location</td>
+        <td>summary</td>
+      </tr>
+    {% for ost in latest_account_list %}
+      <tr>
+        <td>{{ ost.id }}</td>
+        <td>{{ ost.geneId }}</td>
+        <td>{{ost.officalSymbal}}</td>
+        <td>{{ost.officalFullName}}</td>
+        <td>{{ost.otherAliases}}</td>
+        <td>{{ost.geneType}}</td>
+        <td>{{ost.organism}}</td>
+        <td>{{ost.chromosome}}</td>
+        <td>{{ost.location}}</td>
+        <td>{{ost.summary}}</td>
+      </tr>
+    {% endfor %}
+    </table>
+{% else %}
+    <p>No datas are available.</p>
+{% endif %}
