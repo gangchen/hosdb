@@ -1,8 +1,14 @@
 {% include 'includes/header.html' %}
 
-{% if latest_account_list %}
-    <table border="1" align="center">
-    <tr>
+<form action="/gene/" method="post">{% csrf_token %}
+   <div align = "center">
+   <input type="text" name="search" id="search" value="" />
+   <input type="submit" value="submit" />
+   </div>
+{% if fullGene %}
+   {% if search %}
+     <table border="1" align="center">
+       <tr>
         <td>id</td>
         <td>geneId</td>
         <td>officalSymbal</td>
@@ -13,24 +19,28 @@
         <td>chromosome</td>
         <td>location</td>
         <td>summary</td>
-      </tr>
-    {% for ost in latest_account_list %}
-      <tr>
-        <td>{{ ost.id }}</td>
-        <td>{{ ost.geneId }}</td>
-        <td><a href="{{ost.officalSymbal}}">{{ost.officalSymbal}}</a></td>
-        <td>{{ost.officalFullName}}</td>
-        <td>{{ost.otherAliases}}</td>
-        <td>{{ost.geneType}}</td>
-        <td>{{ost.organism}}</td>
-        <td>{{ost.chromosome}}</td>
-        <td>{{ost.location}}</td>
-        <td>{{ost.summary}}</td>
-      </tr>
-    {% endfor %}
-    </table>
+       </tr>
+      {% for ost in fullGene %}
+        {% if search in ost.officalSymbal %}
+          <tr>
+            <td>{{ ost.id }}</td>
+            <td>{{ ost.geneId }}</td>
+            <td><a href="{{ost.officalSymbal}}">{{ost.officalSymbal}}</a></td>
+            <td>{{ost.officalFullName}}</td>
+            <td>{{ost.otherAliases}}</td>
+            <td>{{ost.geneType}}</td>
+            <td>{{ost.organism}}</td>
+            <td>{{ost.chromosome}}</td>
+            <td>{{ost.location}}</td>
+            <td>{{ost.summary}}</td>
+          </tr>
+         {% endif %}
+       {% endfor %}
+     </table>
+   {% endif %}
 {% else %}
     <p>No datas are available.</p>
 {% endif %}
+</form>
 
 {% include 'includes/footer.html' %}
