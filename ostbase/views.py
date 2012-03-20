@@ -6,10 +6,11 @@ from django.http import  HttpResponse
 from django.template import *
 from django.template.loader import get_template
 
-def genes(request):
-    fullGene = Gene.objects.all()[:90]
-    search = request.POST.get('search',None)
-    return render_to_response('genes.html', {'fullGene': fullGene,'search': search},context_instance=RequestContext(request))
+#def genes(request):
+    #fullGene = Gene.objects.all()[:90]
+   # search = request.POST.get('search',None)
+   # return render_to_response('GeneList.html')
+    #return render_to_response('GeneList.html', {'fullGene': fullGene,'search': search},context_instance=RequestContext(request))
 
 def selectedGene(request, geneSymbol):
     selectedGenes = Gene.objects.filter(officalSymbal = geneSymbol)
