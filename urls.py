@@ -5,7 +5,7 @@ from hosdb.views import *
 # from django.contrib import admin
 # admin.autodiscover()
 
-urlpatterns = patterns('hosdb.view',
+urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'mysite.views.home', name='home'),
     # url(r'^mysite/', include('mysite.foo.urls')),
@@ -16,8 +16,8 @@ urlpatterns = patterns('hosdb.view',
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
     # url(r'^ostbase/', include('ostbase.url')),
-    #url('^GeneList$', include('ostbase.url')),
-    url(r'^GeneList$', genes),
-    url(r'^query$', query),
+    url(r'^GeneList/', include('ostbase.url')),
+    #url(r'^GeneList/$', genes),
+    url(r'^query/$', query),
     url(r'^$', home),
 )

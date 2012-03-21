@@ -9,17 +9,7 @@ def home(request):
     html = template.render(Context());
     return HttpResponse(html)
 
-def genes(request):
-    template = get_template('GeneList.html')
-    html = template.render(Context());
-    return HttpResponse(html)
-
 def query(request):
     template = get_template('Query.html')
     html = template.render(Context());
     return HttpResponse(html)
-
-
-    #fullGene = Gene.objects.all()[:90]
-    #search = request.POST.get('search',None)
-    #return render_to_response('GeneList.html')
