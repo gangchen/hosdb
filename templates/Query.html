@@ -1,34 +1,40 @@
 {% include 'includes/header.html' %}
-<div id="global_top1">
+
+<div class="grid_6">
+<div id="gene_search">
+<h2>Gene</h2>
+<form>
+<input type="text" name="gene" value="Gene Symbol">
+<input type="submit" value="Search">
+</form>
+</div>
+<div id="mirna_search">
+<h2>miRNA</h2>
+<form>
+<input type="text" name="gene" value="MiRNA name">
+<input type="submit" value="Search">
+</form>
+</div>
+<div id="lncrna_search">
+<h2>LncRNA</h2>
+<form>
+<input type="text" name="gene" value="LncRNA name">
+<input type="submit" value="Search">
+</form>
+</div>
+<div id="pathway_search">
+<h2>Pathway</h2>
+<form>
+<input type="text" name="gene" value="Pathway name">
+<input type="submit" value="Search">
+</form>
+</div>
 </div>
 
-<div id="global_top3">
+<div class="grid_6">
+<div id="search_help">
+<h2>Help</h2>
+</div>
 </div>
 
-<div id="query_Text1">
-<font size="+2">Gene Search</font>
-</div>
-
-<div id="query_id1">
-</div>
-
-<div id="query_Text2">
-<font size="+2">MiRNA</font>
-</div>
-
-<div id="query_id2">
-</div>
-
-<div id="query_Text3">
-<font size="+2">Pathway Search</font>
-</div>
-
-<div id="query_id3">
-</div>
-
-<div id="query_id4">
-</div>
-
-<div id="global_bottom">
-</div>
-
+{% include 'includes/footer.html' %}

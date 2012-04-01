@@ -1,11 +1,10 @@
 {% include 'includes/header.html' %}
-<div id="global_top1">
+
+<div class="grid_12" id="GeneList_Text">
+<img src='{{ STATIC_URL }}images/chromosome.gif' width="760px"/>
 </div>
 
-<div id="global_top3">
-</div>
-
-<div id="GeneList_Text">
+<div class="grid_12">
 <form action="/GeneList/" method="post">{% csrf_token %}
    <font size="+2">GeneList</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
    <input type="text" name="search" id="search" value="" />
@@ -13,9 +12,9 @@
 </form>
 </div>
 
-<div id="GeneList_id1">
+<div class="grid_12" id="GeneList_id1">
 {% if fullGene %}
-     <table border="1" align="center">
+     <table>
        <tr>
         <td>id</td>
         <td>geneId</td>
