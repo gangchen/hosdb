@@ -11,3 +11,12 @@ class Gene(models.Model):
     chromosome = models.CharField(max_length = 50)
     location = models.CharField(max_length = 50)
     summary = models.CharField(max_length = 3000,blank = True, default='')
+
+class Mirna(models.Model):
+    mirnaId = models.BigIntegerField(unique = True)
+
+class Lncrna(models.Model):
+    lncrnaId = models.BigIntegerField(unique = True)
+
+class Pathway(models.Model):
+    pathwayId = models.BigIntegerField(unique = True)

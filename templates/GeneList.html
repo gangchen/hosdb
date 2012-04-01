@@ -15,16 +15,8 @@
 <div class="grid_12" id="GeneList_id1">
 {% if fullGene %}
      <table>
-       <tr>
-        <td>id</td>
-        <td>geneId</td>
-        <td>officalSymbal</td>
-        <td>officalFullName</td>
-        <td>otherAliases</td>
-       </tr>
       {% for ost in items.object_list %}
           <tr>
-            <td>{{ ost.id }}</td>
             <td>{{ ost.geneId }}</td>
             <td><a href="{{ost.officalSymbal}}">{{ost.officalSymbal}}</a></td>
             <td>{{ost.officalFullName}}</td>
@@ -52,6 +44,4 @@
   </div>
 </div>
 
-<div id="global_bottom">
-Developed by <a href="http://www.csu.edu.cn">Central South University</a>.
-</div>
+{% include 'includes/footer.html' %}

@@ -13,3 +13,8 @@ def query(request):
     template = get_template('Query.html')
     html = template.render(Context());
     return HttpResponse(html)
+
+def about(request):
+    template = get_template('about.html')
+    html = template.render(Context());
+    return HttpResponse(html)

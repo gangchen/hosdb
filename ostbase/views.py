@@ -11,8 +11,8 @@ def genes(request):
     search = request.POST.get('search','')
     if search == "":
 	search = request.GET.get('search','')
-    fullGene = Gene.objects.filter(officalSymbal__contains=search)
-    paginator = Paginator(fullGene,5)
+    fullGene = Gene.objects.all()
+    paginator = Paginator(fullGene,20)
     p = request.GET.get('page','')
     try:
         items = paginator.page(p)
@@ -27,3 +27,15 @@ def selectedGene(request, geneSymbol):
     template = get_template('gene.html')
     html = template.render(Context({'selectedGenes':selectedGenes}))
     return HttpResponse(html)
+
+
+def mirna(request):
+    return HttpResponse("miRNA")
+
+
+def lncrna(request):
+    return HttpResponse("lncRNA")
+
+def pathway(request):
+    return HttpResponse("Pathway")
+
