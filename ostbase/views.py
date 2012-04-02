@@ -1,6 +1,6 @@
 # Create your views here.
 #from django.template import Context, loader
-from ostbase.models import Gene
+from ostbase.models import Gene, Mirna, Lncrna, Pathway
 from django.shortcuts import render_to_response
 from django.http import  HttpResponse
 from django.template import *
@@ -20,7 +20,7 @@ def genes(request):
         items = paginator.page(1)
     except EmptyPage:
         items = paginator.page(paginator.num_pages)
-    return render_to_response('GeneList.html', {'fullGene': fullGene,'search': search,'items': items},context_instance=RequestContext(request))
+    return render_to_response('genes.html', {'fullGene': fullGene,'search': search,'items': items},context_instance=RequestContext(request))
 
 def selectedGene(request, geneSymbol):
     selectedGenes = Gene.objects.filter(officalSymbal = geneSymbol)
@@ -30,12 +30,32 @@ def selectedGene(request, geneSymbol):
 
 
 def mirna(request):
-    return HttpResponse("miRNA")
+    template = get_template('mirnas.html')
+    html = template.render(Context())
+    return HttpResponse(html)
 
+def selectedMirna(request, mirna):
+    template = get_template('mirna.html')
+    html = template.render(Context())
+    return HttpResponse(html)
 
 def lncrna(request):
-    return HttpResponse("lncRNA")
+    template = get_template('lncrnas.html')
+    html = template.render(Context())
+    return HttpResponse(html)
+
+def selectedLncrna(request, lncrna):
+    template = get_template('lncrna.html')
+    html = template.render(Context())
+    return HttpResponse(html)
 
 def pathway(request):
-    return HttpResponse("Pathway")
+    template = get_template('pathways.html')
+    html = template.render(Context())
+    return HttpResponse(html)
+
+def selectedPathway(request, pathway):
+    template = get_template('pathway.html')
+    html = template.render(Context())
+    return HttpResponse(html)
 
