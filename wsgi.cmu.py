@@ -1,7 +1,7 @@
 import os, sys
 import site
 
-ALLDIRS = ['/var/www/hosdb']
+ALLDIRS = ['/var/www/hosdb', '/var/www']
 
 prev_sys_path = list(sys.path)
 
