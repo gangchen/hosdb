@@ -8,4 +8,11 @@ Human OsteoSarcoma DataBase (HOSDB) is a Django-based bioinformatics database we
 * Qi Li
 * Gang Chen
 
+## Deployment
+First, a database should be created for HOSDB. Related configuration in settings.py should be modified accordingly.
+
+Then, following commands should be executed:
+    python manage.py syncdb
+	python manage.py collectstatic
+
 ## References
