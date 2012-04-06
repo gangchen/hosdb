@@ -4,4 +4,4 @@ def update_hosdb():
     with cd('/var/www/hosdb/'):
         run('git pull')
         run('python manage.py syncdb')
-        run('python manage.py collectstatic')
+        run('python manage.py collectstatic --noinput')
