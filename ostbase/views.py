@@ -22,10 +22,6 @@ def genes(request):
         items = paginator.page(paginator.num_pages)
     return render_to_response('genes.html', {'fullGene': fullGene,'search': search,'items': items},context_instance=RequestContext(request))
 
-def genesTable(request):
-    fullGene = Gene.objects.order_by("chromosome")
-    return render_to_response('genes.html', {'fullGene': fullGene},context_instance=RequestContext(request))
-
 def selectedGene(request, geneSymbol):
     selectedGenes = Gene.objects.filter(officalSymbal = geneSymbol)
     template = get_template('gene.html')
@@ -33,9 +29,19 @@ def selectedGene(request, geneSymbol):
     return HttpResponse(html)
 
 def mirna(request):
-    template = get_template('mirnas.html')
-    html = template.render(Context())
-    return HttpResponse(html)
+    search = request.POST.get('search','')
+    if search == "":
+	search = request.GET.get('search','')
+    fullGene = Mirna.objects.all()
+    paginator = Paginator(fullGene,50)
+    p = request.GET.get('page','')
+    try:
+        items = paginator.page(p)
+    except PageNotAnInteger:
+        items = paginator.page(1)
+    except EmptyPage:
+        items = paginator.page(paginator.num_pages)
+    return render_to_response('mirnas.html', {'fullGene': fullGene,'search': search,'items': items},context_instance=RequestContext(request))
 
 def selectedMirna(request, mirna):
     template = get_template('mirna.html')
@@ -43,9 +49,19 @@ def selectedMirna(request, mirna):
     return HttpResponse(html)
 
 def lncrna(request):
-    template = get_template('lncrnas.html')
-    html = template.render(Context())
-    return HttpResponse(html)
+    search = request.POST.get('search','')
+    if search == "":
+	search = request.GET.get('search','')
+    fullGene = Lncrna.objects.all()
+    paginator = Paginator(fullGene,50)
+    p = request.GET.get('page','')
+    try:
+        items = paginator.page(p)
+    except PageNotAnInteger:
+        items = paginator.page(1)
+    except EmptyPage:
+        items = paginator.page(paginator.num_pages)
+    return render_to_response('lncrnas.html', {'fullGene': fullGene,'search': search,'items': items},context_instance=RequestContext(request))
 
 def selectedLncrna(request, lncrna):
     template = get_template('lncrna.html')
@@ -61,10 +77,3 @@ def selectedPathway(request, pathway):
     template = get_template('pathway.html')
     html = template.render(Context())
     return HttpResponse(html)
-
-def xhr_test(request):
-    if request.is_ajax():
-        message = "Ajax"
-    else:
-        message = "Hello"
-    return HttpResponse(message)

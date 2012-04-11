@@ -1,3 +1,49 @@
 {% include 'includes/header.html' %}
-
+<div class="grid_12" id="GeneList_id1">
+  <div class="pagination">
+    <span class="step-links">
+        {% if items.has_previous %}
+            <a href="?page={{ items.previous_page_number }}&search={{search}}">PREVIOUS</a>
+        {% endif %}
+ 
+        <span class="current">
+            Page {{ items.number }} of {{ items.paginator.num_pages }}.
+        </span>
+ 
+        {% if items.has_next %}
+            <a href="?page={{ items.next_page_number }}&search={{search}}">NEXT</a>
+        {% endif %}
+    </span>
+  </div>
+{% if fullGene %}
+     <table>
+       <thead><th>Seq Name</th><th>Gene Symbol</th><th width="300px">AssociatedGeneName</th><th>Chromosome</th></thead>
+      {% for ost in items.object_list %}
+          <tr>
+            <td>{{ost.seqname}}</td>
+            <td>{{ost.geneSymbol}}</td>
+            <td>{{ost.associatedGeneName}}</td>
+            <td>{{ost.chromosome}}</td>
+          </tr>
+       {% endfor %}
+     </table>
+{% else %}
+    <p>No datas are available.</p>
+{% endif %}
+  <div class="pagination">
+    <span class="step-links">
+        {% if items.has_previous %}
+            <a href="?page={{ items.previous_page_number }}&search={{search}}">PREVIOUS</a>
+        {% endif %}
+ 
+        <span class="current">
+            Page {{ items.number }} of {{ items.paginator.num_pages }}.
+        </span>
+ 
+        {% if items.has_next %}
+            <a href="?page={{ items.next_page_number }}&search={{search}}">NEXT</a>
+        {% endif %}
+    </span>
+  </div>
+</div>
 {% include 'includes/footer.html' %}
