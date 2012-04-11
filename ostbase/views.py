@@ -12,7 +12,7 @@ def genes(request):
     if search == "":
 	search = request.GET.get('search','')
     fullGene = Gene.objects.all()
-    paginator = Paginator(fullGene,20)
+    paginator = Paginator(fullGene,50)
     p = request.GET.get('page','')
     try:
         items = paginator.page(p)
@@ -22,12 +22,15 @@ def genes(request):
         items = paginator.page(paginator.num_pages)
     return render_to_response('genes.html', {'fullGene': fullGene,'search': search,'items': items},context_instance=RequestContext(request))
 
+def genesTable(request):
+    fullGene = Gene.objects.order_by("chromosome")
+    return render_to_response('genes.html', {'fullGene': fullGene},context_instance=RequestContext(request))
+
 def selectedGene(request, geneSymbol):
     selectedGenes = Gene.objects.filter(officalSymbal = geneSymbol)
     template = get_template('gene.html')
     html = template.render(Context({'selectedGenes':selectedGenes}))
     return HttpResponse(html)
-
 
 def mirna(request):
     template = get_template('mirnas.html')
@@ -59,3 +62,9 @@ def selectedPathway(request, pathway):
     html = template.render(Context())
     return HttpResponse(html)
 
+def xhr_test(request):
+    if request.is_ajax():
+        message = "Ajax"
+    else:
+        message = "Hello"
+    return HttpResponse(message)

@@ -1,18 +1,15 @@
 {% include 'includes/header.html' %}
 
-<div class="grid_12" id="GeneList_Text">
-<img src='{{ STATIC_URL }}images/chromosome.gif' width="760px"/>
-</div>
-
 <div class="grid_12" id="GeneList_id1">
 {% if fullGene %}
      <table>
+       <thead><th>Gene ID</th><th>Gene Symbol</th><th width="300px">Full Name</th><th>Chromosome</th></thead>
       {% for ost in items.object_list %}
           <tr>
             <td>{{ ost.geneId }}</td>
             <td><a href="{{ost.officalSymbal}}">{{ost.officalSymbal}}</a></td>
             <td>{{ost.officalFullName}}</td>
-            <td>{{ost.otherAliases}}</td>
+            <td>{{ost.chromosome}}</td>
           </tr>
        {% endfor %}
      </table>
@@ -22,7 +19,7 @@
   <div class="pagination">
     <span class="step-links">
         {% if items.has_previous %}
-            <a href="?page={{ items.previous_page_number }}&search={{search}}">previous</a>
+            <a href="?page={{ items.previous_page_number }}&search={{search}}">PREVIOUS</a>
         {% endif %}
  
         <span class="current">
@@ -30,7 +27,7 @@
         </span>
  
         {% if items.has_next %}
-            <a href="?page={{ items.next_page_number }}&search={{search}}">next</a>
+            <a href="?page={{ items.next_page_number }}&search={{search}}">NEXT</a>
         {% endif %}
     </span>
   </div>
