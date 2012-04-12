@@ -64,9 +64,13 @@ def lncrna(request):
     return render_to_response('lncrnas.html', {'fullGene': fullGene,'search': search,'items': items},context_instance=RequestContext(request))
 
 def selectedLncrna(request, lncrna):
-    template = get_template('lncrna.html')
-    html = template.render(Context())
+    selectedGenes = Lncrna.objects.filter(seqname = lncrna)
+    template = get_template('gene.html')
+    html = template.render(Context({'selectedGenes':selectedGenes}))
     return HttpResponse(html)
+    #template = get_template('lncrna.html')
+    #html = template.render(Context())
+    #return HttpResponse(html)
 
 def pathway(request):
     template = get_template('pathways.html')

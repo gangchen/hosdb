@@ -20,7 +20,7 @@
        <thead><th>Seq Name</th><th>Gene Symbol</th><th width="300px">AssociatedGeneName</th><th>Chromosome</th></thead>
       {% for ost in items.object_list %}
           <tr>
-            <td>{{ost.seqname}}</td>
+            <td><a href="{{ost.seqname}}">{{ost.seqname}}</a></td>
             <td>{{ost.geneSymbol}}</td>
             <td>{{ost.associatedGeneName}}</td>
             <td>{{ost.chromosome}}</td>

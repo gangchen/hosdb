@@ -19,7 +19,7 @@
     <tr><td>Aliases</td><td>{{gene.otherAliases}}</td></tr>
     <tr><td>Type</td><td>{{gene.geneType}}</td></tr>
     <tr><td>Organism</td><td>{{gene.organism}}</td></tr>
-    <tr><td>Chromosome</td><td>Chromosome</td></tr>
+    <tr><td>Chromosome</td><td>{{gene.chromosome}}</td></tr>
     <tr><td>Localtion</td><td>{{gene.location}}</td></tr>
    {% endfor%}
    </table>
@@ -27,7 +27,4 @@
     <h1>No datas are available.</h1>
 {% endif %}
 </div>
-
-<div id="global_bottom">
-Developed by <a href="http://www.csu.edu.cn">Central South University</a>.
-</div>
+{% include 'includes/footer.html' %}
