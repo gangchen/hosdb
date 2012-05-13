@@ -25,15 +25,6 @@ class Rna(models.Model):
 
     class Meta:
         abstract = True
-    
-class Mirna(Rna):
-    cytoband = models.CharField(max_length = 20, blank = True, null = True)
-    description = models.CharField(max_length = 3000, blank = True, null = True)
-    ensemblId = models.CharField(max_length = 20, blank = True, null = True)
-    entrezGene = models.CharField(max_length = 20, null = True, blank = True)
-    goAvadis = models.CharField(max_length = 1000, blank = True, null = True)
-    tigrId = models.CharField(max_length = 50, blank = True, null = True)
-    uniGene = models.CharField(max_length = 50, blank = True, null = True)
 
 class Lncrna(Rna):
     relationship = models.CharField(max_length = 50)
@@ -44,5 +35,18 @@ class Lncrna(Rna):
     associatedGeneStart = models.CharField(max_length = 20, null = True, blank = True)
     associatedGeneEnd = models.CharField(max_length = 20, null = True, blank = True)
     
+class MicroRna(models.Model):
+    rnaName = models.CharField(max_length = 30)
+    supportType = models.CharField(max_length = 30)
+    organism = models.CharField(max_length = 50)
+    hgncId = models.CharField(max_length = 30, blank = True, null = True)
+    gene = models.CharField(max_length = 50)
+    isoform = models.CharField(max_length = 50, blank = True, null = True)
+    evidence = models.CharField(max_length = 100, blank = True, null = True)
+    chromosome = models.CharField(max_length = 30, blank = True, null = True)
+    startPos = models.CharField(max_length = 30, blank = True, null = True)
+    endPos = models.CharField(max_length = 30, blank = True, null = True)
+    
+
 class Pathway(models.Model):
     pathwayId = models.BigIntegerField(unique = True)
