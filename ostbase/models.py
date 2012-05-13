@@ -35,7 +35,7 @@ class Lncrna(Rna):
     associatedGeneStart = models.CharField(max_length = 20, null = True, blank = True)
     associatedGeneEnd = models.CharField(max_length = 20, null = True, blank = True)
     
-class MicroRna(models.Model):
+class Mirna(models.Model):
     rnaName = models.CharField(max_length = 30)
     supportType = models.CharField(max_length = 30)
     organism = models.CharField(max_length = 50)
