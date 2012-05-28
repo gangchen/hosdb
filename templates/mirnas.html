@@ -20,7 +20,7 @@
        <thead><th>RNA Name</th><th>Gene </th><th width="300px">evidence</th><th>Chromosome</th></thead>
       {% for ost in items.object_list %}
           <tr>
-            <td><a href="{{ost.rnaname}}">{{ost.rnaname}}</a></td>
+            <td><a href="{{ost.rnaname}}">{{ost.rnaName}}</a></td>
             <td>{{ost.gene}}</td>
             <td>{{ost.evidence}}</td>
             <td>{{ost.chromosome}}</td>
