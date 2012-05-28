@@ -17,12 +17,12 @@
   </div>
 {% if fullGene %}
      <table>
-       <thead><th>Seq Name</th><th>Gene Symbol</th><th width="300px">Description</th><th>Chromosome</th></thead>
+       <thead><th>RNA Name</th><th>Gene </th><th width="300px">evidence</th><th>Chromosome</th></thead>
       {% for ost in items.object_list %}
           <tr>
-            <td>{{ost.seqname}}</td>
-            <td><a href="{{ost.geneSymbol}}">{{ost.geneSymbol}}</a></td>
-            <td>{{ost.description}}</td>
+            <td><a href="{{ost.rnaname}}">{{ost.rnaname}}</a></td>
+            <td>{{ost.gene}}</td>
+            <td>{{ost.evidence}}</td>
             <td>{{ost.chromosome}}</td>
           </tr>
        {% endfor %}
