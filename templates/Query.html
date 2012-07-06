@@ -1,40 +1,55 @@
 {% include 'includes/header.html' %}
 
-<div class="grid_6">
-<div id="gene_search">
-<h2>Gene</h2>
-<form>
-<input type="text" name="gene" value="Gene Symbol">
-<input type="submit" value="Search">
-</form>
-</div>
-<div id="mirna_search">
-<h2>miRNA</h2>
-<form>
-<input type="text" name="gene" value="MiRNA name">
-<input type="submit" value="Search">
-</form>
-</div>
-<div id="lncrna_search">
-<h2>LncRNA</h2>
-<form>
-<input type="text" name="gene" value="LncRNA name">
-<input type="submit" value="Search">
-</form>
-</div>
-<div id="pathway_search">
-<h2>Pathway</h2>
-<form>
-<input type="text" name="gene" value="Pathway name">
-<input type="submit" value="Search">
-</form>
-</div>
-</div>
+<tr>
+  <td colspan="3"><table border="0" cellpadding="0" cellspacing="0" class="box">
+          <tr>
+            <td class="boxtl">&nbsp;</td>
+            <td class="boxh">&nbsp;</td>
+            <td class="boxtr">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="boxl">&nbsp;</td>
+            <td class="boxfill"><h2>Gene</h2>
+				<form action="/ostbase/genes/" method="get">
+				<input type="text" name="search" value="Gene Symbol">
+				<input type="submit" value="Search">
+				</form></td>
+            <td class="boxr">&nbsp;</td>
+          </tr>
+		  <tr>
+            <td class="boxl">&nbsp;</td>
+            <td class="boxfill"><h2>miRNA</h2>
+				<form>
+				<input type="text" name="gene" value="MiRNA name">
+				<input type="submit" value="Search">
+				</form></td>
+            <td class="boxr">&nbsp;</td>
+          </tr>
+		  <tr>
+            <td class="boxl">&nbsp;</td>
+            <td class="boxfill"><h2>LncRNA</h2>
+				<form>
+				<input type="text" name="gene" value="LncRNA name">
+				<input type="submit" value="Search">
+				</form></td>
+            <td class="boxr">&nbsp;</td>
+          </tr>
+		  <tr>
+            <td class="boxl">&nbsp;</td>
+            <td class="boxfill"><h2>Pathway</h2>
+				<form>
+				<input type="text" name="gene" value="Pathway name">
+				<input type="submit" value="Search">
+				</form></td>
+            <td class="boxr">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="boxbl">&nbsp;</td>
+            <td class="boxb">&nbsp;</td>
+            <td class="boxbr">&nbsp;</td>
+          </tr>         
+        </table></td>
+</tr>
 
-<div class="grid_6">
-<div id="search_help">
-<h2>Help</h2>
-</div>
-</div>
 
 {% include 'includes/footer.html' %}

@@ -1,17 +1,15 @@
 {% include 'includes/header.html' %}
-<div id="global_top1">
-</div>
-
-<div id="global_top3">
-</div>
-
-<div id="GeneList_Text">
-   <font size="+2">GeneInformation</font>
-</div>
-
-<div id="GeneList_id1">
-{% if selectedGenes %}
-  <table border="1" align="center">
+<tr>
+  <td colspan="3"><table border="0" cellpadding="0" cellspacing="0" class="box">
+          <tr>
+            <td class="boxtl">&nbsp;</td>
+            <td class="boxh">&nbsp;</td>
+            <td class="boxtr">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="boxl">&nbsp;</td>
+            <td class="boxfill">{% if selectedGenes %}
+  <table border="1" align="center" class="datatable">
   {% for gene in selectedGenes%}
     <tr><td>officalSymbal</td><td>{{gene.officalSymbal}}</td></tr>
     <tr><td>Gene ID</td><td>{{gene.geneId}}</td></tr>
@@ -26,5 +24,14 @@
 {% else %}
     <h1>No datas are available.</h1>
 {% endif %}
-</div>
+</td>
+            <td class="boxr">&nbsp;</td>
+          </tr>		  
+          <tr>
+            <td class="boxbl">&nbsp;</td>
+            <td class="boxb">&nbsp;</td>
+            <td class="boxbr">&nbsp;</td>
+          </tr>         
+        </table></td>
+</tr>
 {% include 'includes/footer.html' %}
