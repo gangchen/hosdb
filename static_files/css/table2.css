@@ -26,4 +26,8 @@
 	background-color: #DFE7F2;
 	color: #000000;
 }
+.datatable tr:hover { background:#99BCBF;
+ border:1px solid #03476F;
+ color:#000000;
+}
 
