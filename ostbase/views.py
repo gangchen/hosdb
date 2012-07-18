@@ -10,9 +10,9 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 def genes(request):
     search = request.POST.get('search','')
     if search == "":
-	search = request.GET.get('search','')
+		search = request.GET.get('search','')
     fullGene = Gene.objects.all()
-    paginator = Paginator(fullGene,50)
+    paginator = Paginator(fullGene,10)
     p = request.GET.get('page','')
     try:
         items = paginator.page(p)
@@ -31,9 +31,9 @@ def selectedGene(request, geneSymbol):
 def mirna(request):
     search = request.POST.get('search','')
     if search == "":
-	search = request.GET.get('search','')
+		search = request.GET.get('search','')
     fullGene = Mirna.objects.all()
-    paginator = Paginator(fullGene,50)
+    paginator = Paginator(fullGene,10)
     p = request.GET.get('page','')
     try:
         items = paginator.page(p)
@@ -53,7 +53,7 @@ def lncrna(request):
     if search == "":
 	search = request.GET.get('search','')
     fullGene = Lncrna.objects.all()
-    paginator = Paginator(fullGene,50)
+    paginator = Paginator(fullGene,10)
     p = request.GET.get('page','')
     try:
         items = paginator.page(p)

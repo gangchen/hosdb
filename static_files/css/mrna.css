@@ -1,0 +1,214 @@
+/*----------------------------------------------------------------*/
+/*   GENERAL									      			  */
+/*----------------------------------------------------------------*/
+body, td, th {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #000000;
+	vertical-align:top;
+}
+body {
+	background-image: url(../images/bg.jpg);
+	background-repeat: repeat-x;
+	background-color:#CCCCCC;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+a:link {
+	color: blue;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: blue;
+}
+a:hover {
+	text-decoration: underline;
+	color: #D72F2E;
+}
+a:active {
+	text-decoration: none;	
+	color: #D72F2E;
+}
+h1{
+	font-size:13px;
+}
+h2{
+	font-size:12px;
+}
+h3{
+	font-size:12px;
+}
+input, textarea, select{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	color:#666666;
+	h\eight:23px;
+	border: 1px solid #CCCCCC;
+	padding: 3px 3px 3px 3px;
+}
+#hintbox {
+	/*CSS for pop up hint box */
+	top: 0;
+	position:absolute;
+	background-color: #CCCCCC;
+	width: 180px; /*Default width of hint.*/
+	padding: 3px 3px 3px 3px;
+	border:1px solid #999999;
+	font:normal 11px Georgia, "Times New Roman", Times, serif;
+	line-height:18px;
+	z-index:100;
+	visibility: hidden;
+}
+/*----------------------------------------------------------------*/
+/*   PAGE CONTENT												  */
+/*----------------------------------------------------------------*/
+.container{
+	width:890px;
+	background-image:url(../images/tableBG.png);
+	background-position:top;
+	background-repeat:no-repeat;
+}
+.footer{	
+	font-size: 10px;
+	padding-top:10px;
+	color:#666666;
+	text-align:center;
+	background-image:url(../images/footer.png);
+	background-repeat:repeat-x;
+}
+/*----------------------------------------------------------------*/
+/*   TABLE LAYOUT												  */
+/*----------------------------------------------------------------*/
+.box {
+	width:100%;
+	border:0;
+	padding:0;
+	margin:0;
+}
+.boxtl {
+	background-image:url(../images/box/box_01.png);
+	background-repeat:no-repeat;
+	background-position:bottom;
+	width:22px;
+	height:22px;
+}
+.boxh {
+	color:#CCCCCC;
+	font-weight:700;
+	padding: 6px 3px 7px 3px;
+	background-image:url(../images/box/box_02.png);
+	background-repeat:repeat-x;
+	background-position:bottom;
+}
+.boxtr {
+	background-image:url(../images/box/box_03.png);
+	background-repeat:no-repeat;
+	background-position:bottom;	
+	width:22px;
+	height:22px;
+}
+.boxl {
+	width:22px;
+	background-image:url(../images/box/box_05l.png);
+	background-repeat:repeat-y;
+	background-position:top;
+}
+.boxfill {
+	padding-bottom:10px;
+	background-image:url(../images/box/box_05.png);
+	background-repeat:repeat-x;
+	background-position:top;
+	text-align:justify;
+}
+.boxr {
+	width:22px;
+	background-image:url(../images/box/box_05r.png);
+	background-repeat:repeat-y;
+	background-position:top;
+}
+.boxbl {
+	background-image:url(../images/box/box_07.png);
+	background-repeat:no-repeat;
+	background-position:bottom;
+	width:22px;
+	height:22px;
+}
+.boxb {
+	font-weight:700;	
+	background-image:url(../images/box/box_08.png);
+	background-repeat:repeat-x;
+	background-position:bottom;
+}
+.boxbr {
+	background-image:url(../images/box/box_09.png);
+	background-repeat:no-repeat;
+	background-position:bottom;	
+	width:22px;
+	height:22px;
+}
+/*----------------------------------------------------------------*/
+/*   PANELS												  		  */
+/*----------------------------------------------------------------*/
+.panel {
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	width: 805px;
+}
+.sub_panel {
+	padding: 5px 5px 5px 5px;
+	float: left;
+	width: 750px;
+}
+.select_toggles{
+	float: right;
+	width: 10px;
+	/* for centering the checkbox */
+	padding-top: 4px;
+	padding-left: 3px;
+}
+.container_title {
+	float: left;
+	font-family:Arial, Helvetica, sans-serif;
+	width: 780px;
+	padding: 5px 5px 5px 5px; 
+	font-weight: bold;
+	color:#FFFFFF;
+	background:#D72F2E; 
+}
+.container_title a{
+	color:#FFFFFF;
+}
+.container_title a:hover{
+	color:#CCCCCC;
+	text-decoration:none;
+}
+.sub_container_title {
+	float: left;
+	width: 750px;
+	padding: 5px 5px 5px 5px; 
+	border: 1px solid #999999;
+	background: #CCCCCC; 
+	color: #000000;
+}
+.padding_containers {
+	float: left;
+	padding: 10px 10px 10px 10px;
+	background: #FFFFFF;
+	color: #000000;
+	width:  770px;
+	display:none;
+}
+.options_containers {
+	display:none;
+}
+.sub_padding_containers {
+	float: left;
+	padding: 10px;
+	background: #ffffff;
+	width:  740px;
+	display:none;
+}
