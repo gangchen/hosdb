@@ -1,0 +1,395 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/samtools/!svn/ver/1011/trunk/samtools
+END
+sam_header.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/samtools/!svn/ver/1007/trunk/samtools/sam_header.c
+END
+errmod.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/samtools/!svn/ver/690/trunk/samtools/errmod.c
+END
+kaln.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/samtools/!svn/ver/794/trunk/samtools/kaln.h
+END
+faidx.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/samtools/!svn/ver/974/trunk/samtools/faidx.c
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/samtools/!svn/ver/984/trunk/samtools/NEWS
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/samtools/!svn/ver/1007/trunk/samtools/Makefile
+END
+sam_header.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/samtools/!svn/ver/489/trunk/samtools/sam_header.h
+END
+errmod.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/samtools/!svn/ver/920/trunk/samtools/errmod.h
+END
+bam_color.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/samtools/!svn/ver/1007/trunk/samtools/bam_color.c
+END
+bam_rmdupse.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/samtools/!svn/ver/488/trunk/samtools/bam_rmdupse.c
+END
+faidx.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/samtools/!svn/ver/458/trunk/samtools/faidx.h
+END
+knetfile.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/samtools/!svn/ver/907/trunk/samtools/knetfile.c
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/samtools/!svn/ver/538/trunk/samtools/AUTHORS
+END
+knetfile.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/samtools/!svn/ver/470/trunk/samtools/knetfile.h
+END
+bam2bcf_indel.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/samtools/!svn/ver/984/trunk/samtools/bam2bcf_indel.c
+END
+Makefile.mingw
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/samtools/!svn/ver/977/trunk/samtools/Makefile.mingw
+END
+bam_pileup.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/samtools/!svn/ver/984/trunk/samtools/bam_pileup.c
+END
+bam_plcmd.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/samtools/!svn/ver/1002/trunk/samtools/bam_plcmd.c
+END
+samtools.1
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/samtools/!svn/ver/1010/trunk/samtools/samtools.1
+END
+bam_md.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/samtools/!svn/ver/984/trunk/samtools/bam_md.c
+END
+bam_endian.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/samtools/!svn/ver/63/trunk/samtools/bam_endian.h
+END
+bam_index.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/samtools/!svn/ver/1007/trunk/samtools/bam_index.c
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/samtools/!svn/ver/109/trunk/samtools/COPYING
+END
+bgzf.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/samtools/!svn/ver/941/trunk/samtools/bgzf.c
+END
+bam2bcf.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/samtools/!svn/ver/1006/trunk/samtools/bam2bcf.c
+END
+bgzf.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/samtools/!svn/ver/941/trunk/samtools/bgzf.h
+END
+bam_reheader.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/samtools/!svn/ver/866/trunk/samtools/bam_reheader.c
+END
+bedidx.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/samtools/!svn/ver/977/trunk/samtools/bedidx.c
+END
+bam2bcf.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/samtools/!svn/ver/1002/trunk/samtools/bam2bcf.h
+END
+cut_target.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/samtools/!svn/ver/922/trunk/samtools/cut_target.c
+END
+razf.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/samtools/!svn/ver/473/trunk/samtools/razf.c
+END
+razf.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/samtools/!svn/ver/462/trunk/samtools/razf.h
+END
+kseq.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/samtools/!svn/ver/984/trunk/samtools/kseq.h
+END
+sam_view.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/samtools/!svn/ver/1002/trunk/samtools/sam_view.c
+END
+bgzip.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/samtools/!svn/ver/728/trunk/samtools/bgzip.c
+END
+bam_tview.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/samtools/!svn/ver/1007/trunk/samtools/bam_tview.c
+END
+bam_cat.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/samtools/!svn/ver/933/trunk/samtools/bam_cat.c
+END
+bam_lpileup.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/samtools/!svn/ver/395/trunk/samtools/bam_lpileup.c
+END
+bamtk.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/samtools/!svn/ver/1002/trunk/samtools/bamtk.c
+END
+phase.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/samtools/!svn/ver/926/trunk/samtools/phase.c
+END
+khash.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/samtools/!svn/ver/920/trunk/samtools/khash.h
+END
+bam2depth.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/samtools/!svn/ver/950/trunk/samtools/bam2depth.c
+END
+bam_rmdup.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/samtools/!svn/ver/488/trunk/samtools/bam_rmdup.c
+END
+padding.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/samtools/!svn/ver/1002/trunk/samtools/padding.c
+END
+bam_sort.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/samtools/!svn/ver/1007/trunk/samtools/bam_sort.c
+END
+bam_aux.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/samtools/!svn/ver/984/trunk/samtools/bam_aux.c
+END
+ChangeLog.old
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/samtools/!svn/ver/1011/trunk/samtools/ChangeLog.old
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/samtools/!svn/ver/907/trunk/samtools/INSTALL
+END
+bam_import.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/samtools/!svn/ver/1002/trunk/samtools/bam_import.c
+END
+bam_stat.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/samtools/!svn/ver/950/trunk/samtools/bam_stat.c
+END
+klist.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/samtools/!svn/ver/482/trunk/samtools/klist.h
+END
+bam.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/samtools/!svn/ver/1002/trunk/samtools/bam.c
+END
+bam.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/samtools/!svn/ver/1006/trunk/samtools/bam.h
+END
+bam_mate.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/samtools/!svn/ver/1002/trunk/samtools/bam_mate.c
+END
+ksort.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/samtools/!svn/ver/979/trunk/samtools/ksort.h
+END
+kprobaln.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/samtools/!svn/ver/982/trunk/samtools/kprobaln.c
+END
+kprobaln.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/samtools/!svn/ver/813/trunk/samtools/kprobaln.h
+END
+sam.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/samtools/!svn/ver/1007/trunk/samtools/sam.c
+END
+sample.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/samtools/!svn/ver/982/trunk/samtools/sample.c
+END
+kstring.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/samtools/!svn/ver/988/trunk/samtools/kstring.c
+END
+razip.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/samtools/!svn/ver/728/trunk/samtools/razip.c
+END
+kaln.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/samtools/!svn/ver/796/trunk/samtools/kaln.c
+END
+sam.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/samtools/!svn/ver/421/trunk/samtools/sam.h
+END
+kstring.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/samtools/!svn/ver/1007/trunk/samtools/kstring.h
+END
+sample.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/samtools/!svn/ver/715/trunk/samtools/sample.h
+END

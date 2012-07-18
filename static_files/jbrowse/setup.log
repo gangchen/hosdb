@@ -1,0 +1,1182 @@
++ bin/cpanm -v --notest -l extlib/ --installdeps .
+cpanm (App::cpanminus) 1.5007 on perl 5.014002 built for x86_64-linux-gnu-thread-multi
+Work directory is /root/.cpanm/work/1342048776.2405
+You have make /usr/bin/make
+You have /usr/bin/wget
+You have /bin/tar: tar (GNU tar) 1.26
+Copyright (C) 2011 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by John Gilmore and Jay Fenlason.
+You have /usr/bin/unzip
+Checking if you have ExtUtils::MakeMaker 6.31 ... Yes (6.57_05)
+Checking if you have ExtUtils::Install 1.46 ... Yes (1.56)
+--> Working on .
+Entering /var/www/hosdb/static_files/jbrowse
+Checking configure dependencies from META.yml
+Checking if you have ExtUtils::MakeMaker 6.30 ... Yes (6.57_05)
+Configuring JBrowse-1.4.1 ... Running Makefile.PL
+Warning: prerequisite GD::Image 0 not found.
+Warning: prerequisite PerlIO::gzip 0 not found.
+Writing Makefile for JBrowse
+Writing MYMETA.yml
+OK
+Checking dependencies from MYMETA.yml ...
+Checking if you have Test::More 0 ... Yes (0.98)
+Checking if you have Pod::Usage 0 ... Yes (1.36)
+Checking if you have Storable 0 ... Yes (2.27)
+Checking if you have PerlIO::gzip 0 ... No
+Checking if you have List::Util 0 ... Yes (1.23)
+Checking if you have Digest::MurmurHash 0 ... Yes (0.11)
+Checking if you have File::Path 0 ... Yes (2.08_01)
+Checking if you have local::lib 0 ... Yes (1.008004)
+Checking if you have DBI 0 ... Yes (1.616)
+Checking if you have Bio::FeatureIO 0 ... Yes (undef)
+Checking if you have warnings 0 ... Yes (1.12)
+Checking if you have base 0 ... Yes (2.16)
+Checking if you have Getopt::Long 0 ... Yes (2.38)
+Checking if you have IO::File 0 ... Yes (1.15)
+Checking if you have Bio::Index::Fasta 0 ... Yes (undef)
+Checking if you have Data::Dumper 0 ... Yes (2.130_02)
+Checking if you have Bio::Root::Version 1.006000 ... Yes (1.006901)
+Checking if you have vars 0 ... Yes (1.02)
+Checking if you have Bio::Annotation::SimpleValue 0 ... Yes (undef)
+Checking if you have strict 0 ... Yes (1.04)
+Checking if you have File::Temp 0 ... Yes (0.22)
+Checking if you have Scalar::Util 0 ... Yes (1.23)
+Checking if you have FindBin 0 ... Yes (1.50)
+Checking if you have Fcntl 0 ... Yes (1.11)
+Checking if you have File::Spec 0 ... Yes (3.33)
+Checking if you have Heap::Simple 0 ... Yes (0.13)
+Checking if you have Heap::Simple::XS 0 ... Yes (0.10)
+Checking if you have POSIX 0 ... Yes (1.24)
+Checking if you have Devel::Size 0 ... Yes (0.77)
+Checking if you have File::Spec::Functions 0 ... Yes (3.33)
+Checking if you have Bio::GFF3::LowLevel::Parser 0 ... Yes (1.3)
+Checking if you have Hash::Merge 0 ... Yes (0.12)
+Checking if you have constant 0 ... Yes (1.21)
+Checking if you have GD::Image 0 ... No
+Checking if you have Exporter 0 ... Yes (5.64_03)
+Checking if you have Bio::OntologyIO 0 ... Yes (undef)
+Checking if you have Carp 0 ... Yes (1.20)
+Checking if you have Bio::SeqFeature::Annotated 0 ... Yes (undef)
+Checking if you have File::Basename 0 ... Yes (2.82)
+Checking if you have JSON 2 ... Yes (2.53)
+Checking if you have Cwd 0 ... Yes (3.36)
+==> Found dependencies: PerlIO::gzip, GD::Image
+Searching PerlIO::gzip on cpanmetadb ...
+--2012-07-12 07:19:36--  http://cpanmetadb.plackperl.org/v1.0/package/PerlIO::gzip
+Resolving cpanmetadb.plackperl.org (cpanmetadb.plackperl.org)... 199.27.77.5, 64.71.157.43
+Connecting to cpanmetadb.plackperl.org (cpanmetadb.plackperl.org)|199.27.77.5|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 65 [text/x-yaml]
+Saving to: `STDOUT'
+
+     0K                                                       100% 14.2M=0s
+
+2012-07-12 07:19:39 (14.2 MB/s) - written to stdout [65/65]
+
+--> Working on PerlIO::gzip
+Fetching http://search.cpan.org/CPAN/authors/id/N/NW/NWCLARK/PerlIO-gzip-0.18.tar.gz ... --2012-07-12 07:19:39--  http://search.cpan.org/CPAN/authors/id/N/NW/NWCLARK/PerlIO-gzip-0.18.tar.gz
+Resolving search.cpan.org (search.cpan.org)... 199.15.176.161
+Connecting to search.cpan.org (search.cpan.org)|199.15.176.161|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: http://mirrors.163.com/cpan/authors/id/N/NW/NWCLARK/PerlIO-gzip-0.18.tar.gz [following]
+--2012-07-12 07:19:40--  http://mirrors.163.com/cpan/authors/id/N/NW/NWCLARK/PerlIO-gzip-0.18.tar.gz
+Resolving mirrors.163.com (mirrors.163.com)... 123.58.173.106, 123.58.173.89
+Connecting to mirrors.163.com (mirrors.163.com)|123.58.173.106|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 19179 (19K) [application/octet-stream]
+Saving to: `PerlIO-gzip-0.18.tar.gz'
+
+     0K .......... ........                                   100% 38.4K=0.5s
+
+2012-07-12 07:19:48 (38.4 KB/s) - `PerlIO-gzip-0.18.tar.gz' saved [19179/19179]
+
+OK
+Unpacking PerlIO-gzip-0.18.tar.gz
+PerlIO-gzip-0.18
+PerlIO-gzip-0.18/gzip.pm
+PerlIO-gzip-0.18/t
+PerlIO-gzip-0.18/Changes
+PerlIO-gzip-0.18/MANIFEST
+PerlIO-gzip-0.18/gzip.xs
+PerlIO-gzip-0.18/Makefile.PL
+PerlIO-gzip-0.18/README
+PerlIO-gzip-0.18/META.yml
+PerlIO-gzip-0.18/t/ok19
+PerlIO-gzip-0.18/t/ok50.gz.short
+PerlIO-gzip-0.18/t/ok54.gz.len
+PerlIO-gzip-0.18/t/read.t
+PerlIO-gzip-0.18/t/write.t
+PerlIO-gzip-0.18/t/ok21
+PerlIO-gzip-0.18/t/ok17.gz
+PerlIO-gzip-0.18/t/ok3.gz
+PerlIO-gzip-0.18/t/ok58.gz.crc
+Entering PerlIO-gzip-0.18
+Checking configure dependencies from META.yml
+Configuring PerlIO-gzip-0.18 ... Running Makefile.PL
+Checking if your kit is complete...
+Looks good
+Writing Makefile for PerlIO::gzip
+Writing MYMETA.yml
+OK
+Checking dependencies from MYMETA.yml ...
+Checking if you have ExtUtils::MakeMaker 0 ... Yes (6.57_05)
+Building PerlIO-gzip-0.18 ... cp gzip.pm blib/lib/PerlIO/gzip.pm
+/usr/bin/perl /usr/share/perl/5.14/ExtUtils/xsubpp  -typemap /usr/share/perl/5.14/ExtUtils/typemap  gzip.xs > gzip.xsc && mv gzip.xsc gzip.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fno-strict-aliasing -pipe -fstack-protector -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -g   -DVERSION=\"0.18\" -DXS_VERSION=\"0.18\" -fPIC "-I/usr/lib/perl/5.14/CORE"   gzip.c
+gzip.xs: In function ‘PerlIOGzip_popped’:
+gzip.xs:870:5: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘IV’ [-Wformat]
+Running Mkbootstrap for PerlIO::gzip ()
+chmod 644 gzip.bs
+rm -f blib/arch/auto/PerlIO/gzip/gzip.so
+cc  -shared -O2 -g -L/usr/local/lib -fstack-protector gzip.o  -o blib/arch/auto/PerlIO/gzip/gzip.so 	\
+	   -lz  	\
+	  
+chmod 755 blib/arch/auto/PerlIO/gzip/gzip.so
+cp gzip.bs blib/arch/auto/PerlIO/gzip/gzip.bs
+chmod 644 blib/arch/auto/PerlIO/gzip/gzip.bs
+Manifying blib/man3/PerlIO::gzip.3pm
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/auto/PerlIO/gzip/gzip.bs
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/auto/PerlIO/gzip/gzip.so
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/PerlIO/gzip.pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/man/man3/PerlIO::gzip.3pm
+Appending installation info to /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/perllocal.pod
+OK
+Successfully installed PerlIO-gzip-0.18
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/.meta/PerlIO-gzip-0.18/install.json
+Searching GD::Image on cpanmetadb ...
+--2012-07-12 07:19:49--  http://cpanmetadb.plackperl.org/v1.0/package/GD::Image
+Resolving cpanmetadb.plackperl.org (cpanmetadb.plackperl.org)... 64.71.157.43, 199.27.77.5
+Connecting to cpanmetadb.plackperl.org (cpanmetadb.plackperl.org)|64.71.157.43|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2012-07-12 07:19:50 ERROR 404: Not Found.
+
+! Finding GD::Image on cpanmetadb failed.
+Searching GD::Image on search.cpan.org ...
+--2012-07-12 07:19:50--  http://search.cpan.org/perldoc?GD::Image
+Resolving search.cpan.org (search.cpan.org)... 199.15.176.161
+Connecting to search.cpan.org (search.cpan.org)|199.15.176.161|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /~lds/GD-2.46/GD/Image.pm.PLS [following]
+--2012-07-12 07:19:50--  http://search.cpan.org/~lds/GD-2.46/GD/Image.pm.PLS
+Reusing existing connection to search.cpan.org:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11803 (12K) [text/html]
+Saving to: `STDOUT'
+
+     0K .......... .                                          100% 20.1K=0.6s
+
+2012-07-12 07:19:51 (20.1 KB/s) - written to stdout [11803/11803]
+
+--> Working on GD::Image
+Fetching http://search.cpan.org/CPAN/authors/id/L/LD/LDS/GD-2.46.tar.gz ... --2012-07-12 07:19:51--  http://search.cpan.org/CPAN/authors/id/L/LD/LDS/GD-2.46.tar.gz
+Resolving search.cpan.org (search.cpan.org)... 199.15.176.161
+Connecting to search.cpan.org (search.cpan.org)|199.15.176.161|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: http://cpan.communilink.net/authors/id/L/LD/LDS/GD-2.46.tar.gz [following]
+--2012-07-12 07:19:52--  http://cpan.communilink.net/authors/id/L/LD/LDS/GD-2.46.tar.gz
+Resolving cpan.communilink.net (cpan.communilink.net)... 203.124.11.85
+Connecting to cpan.communilink.net (cpan.communilink.net)|203.124.11.85|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 260989 (255K) [application/x-gzip]
+Saving to: `GD-2.46.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 19% 27.6K 7s
+    50K .......... .......... .......... .......... .......... 39% 26.5K 6s
+   100K .......... .......... .......... .......... .......... 58% 36.1K 4s
+   150K .......... .......... .......... .......... .......... 78% 36.2K 2s
+   200K .......... .......... .......... .......... .......... 98% 22.3K 0s
+   250K ....                                                  100% 33.7K=8.8s
+
+2012-07-12 07:20:02 (28.8 KB/s) - `GD-2.46.tar.gz' saved [260989/260989]
+
+OK
+Unpacking GD-2.46.tar.gz
+GD-2.46/
+GD-2.46/Makefile.PL
+GD-2.46/qd.pl
+GD-2.46/typemap
+GD-2.46/META.yml
+GD-2.46/GD/
+GD-2.46/GD/Simple.pm
+GD-2.46/GD/Image.pm.PLS
+GD-2.46/GD/Polyline.pm
+GD-2.46/GD/Group.pm
+GD-2.46/GD/Polygon.pm
+GD-2.46/bdf_scripts/
+GD-2.46/bdf_scripts/bdftogd
+GD-2.46/bdf_scripts/README
+GD-2.46/bdf_scripts/bdf2gdfont.PLS
+GD-2.46/README.QUICKDRAW
+GD-2.46/README
+GD-2.46/demos/
+GD-2.46/demos/fonttest
+GD-2.46/demos/brushes.pl
+GD-2.46/demos/transform.pl
+GD-2.46/demos/shapes.pl
+GD-2.46/demos/tile.png
+GD-2.46/demos/polyline.pl
+GD-2.46/demos/fills.pl
+GD-2.46/demos/ttf.pl
+GD-2.46/demos/font_list.png
+GD-2.46/demos/truetype_test
+GD-2.46/demos/copies.pl
+GD-2.46/demos/gd_example.cgi
+GD-2.46/demos/polys.pl
+GD-2.46/GD.pm
+GD-2.46/GD.xs
+GD-2.46/README.unix
+GD-2.46/MANIFEST
+GD-2.46/ChangeLog
+GD-2.46/t/
+GD-2.46/t/test.out.7.png
+GD-2.46/t/test.out.10.png-3
+GD-2.46/t/test.out.8.png-3
+GD-2.46/t/test.out.9.png-2
+GD-2.46/t/test.out.4.png-1
+GD-2.46/t/test.out.8.png-5
+GD-2.46/t/test.out.8.png
+GD-2.46/t/test.out.5.png-1
+GD-2.46/t/test.out.10.gif
+GD-2.46/t/test.out.10.jpeg
+GD-2.46/t/test.out.10.png
+GD-2.46/t/test.out.2.gif
+GD-2.46/t/test.out.1.png
+GD-2.46/t/test.out.9.png-1
+GD-2.46/t/Polyline.t
+GD-2.46/t/tile.png
+GD-2.46/t/test.out.2.png-1
+GD-2.46/t/test.out.8.png-4
+GD-2.46/t/test.out.8.png-1
+GD-2.46/t/test.out.10.png-1
+GD-2.46/t/test.out.3.gif
+GD-2.46/t/test.out.3.png-1
+GD-2.46/t/test.out.4.jpeg
+GD-2.46/t/test.out.3.jpeg
+GD-2.46/t/tile.gif
+GD-2.46/t/tile.jpeg
+GD-2.46/t/frog.jpg
+GD-2.46/t/test.out.4.png
+GD-2.46/t/test.out.9.png
+GD-2.46/t/test.out.7.gif
+GD-2.46/t/test.out.8.jpeg
+GD-2.46/t/test.out.5.jpeg
+GD-2.46/t/test.out.2.png
+GD-2.46/t/test.out.6.jpeg
+GD-2.46/t/test.out.3.png
+GD-2.46/t/test.out.7.jpeg
+GD-2.46/t/test.out.9.gif
+GD-2.46/t/test.out.4.gif
+GD-2.46/t/test.out.5.png
+GD-2.46/t/test.out.8.png-2
+GD-2.46/t/test.out.2.jpeg
+GD-2.46/t/palettemap.png
+GD-2.46/t/test.out.7.png-1
+GD-2.46/t/test.out.8.gif
+GD-2.46/t/test.out.9.jpeg
+GD-2.46/t/GD.t
+GD-2.46/t/test.out.4.png-2
+GD-2.46/t/test.out.8.png-6
+GD-2.46/t/test.out.6.png
+GD-2.46/t/test.out.5.gif
+GD-2.46/t/frog.xpm
+GD-2.46/t/Generic.ttf
+GD-2.46/t/test.out.10.png-2
+GD-2.46/t/test.out.6.gif
+GD-2.46/t/test.out.6.png-1
+Entering GD-2.46
+Checking configure dependencies from META.yml
+Checking if you have ExtUtils::MakeMaker 0 ... Yes (6.57_05)
+Configuring GD-2.46 ... Running Makefile.PL
+Notice: Type perl Makefile.PL -h for command-line option summary.
+
+Configuring for libgd version 2.0.36.
+Checking for stray libgd header files...none found.
+
+Included Features:          GD_XPM GD_JPEG GD_FONTCONFIG GD_FREETYPE GD_PNG GD_GIF GD_GIFANIM GD_OPENPOLYGON GD_UNCLOSEDPOLY GD_ANIMGIF GD_FTCIRCLE VERSION_33
+GD library used from:       /usr/lib
+Checking if your kit is complete...
+Looks good
+Writing Makefile for GD
+Writing MYMETA.yml
+OK
+Checking dependencies from MYMETA.yml ...
+Checking if you have ExtUtils::MakeMaker 0 ... Yes (6.57_05)
+Checking if you have Math::Trig 0 ... Yes (1.2)
+Building GD-2.46 ... /usr/bin/perl GD/Image.pm.PLS GD/Image.pm
+Extracting Image.pm (with variable substitutions)
+cp GD/Polyline.pm blib/lib/GD/Polyline.pm
+cp qd.pl blib/lib/qd.pl
+cp GD/Image.pm blib/lib/GD/Image.pm
+cp GD.pm blib/lib/GD.pm
+AutoSplitting blib/lib/GD.pm (blib/lib/auto/GD)
+cp GD/Simple.pm blib/lib/GD/Simple.pm
+cp GD/Polygon.pm blib/lib/GD/Polygon.pm
+cp GD/Group.pm blib/lib/GD/Group.pm
+/usr/bin/perl /usr/share/perl/5.14/ExtUtils/xsubpp  -typemap /usr/share/perl/5.14/ExtUtils/typemap -typemap typemap  GD.xs > GD.xsc && mv GD.xsc GD.c
+cc -c  -I/usr/include -Wformat=0 -O2 -g   -DVERSION=\"2.46\" -DXS_VERSION=\"2.46\" -fPIC "-I/usr/lib/perl/5.14/CORE"  -DHAVE_JPEG -DHAVE_FT -DHAVE_XPM -DHAVE_GIF -DHAVE_PNG -DHAVE_ANIMGIF -DVERSION_33 -DHAVE_UNCLOSEDPOLY -DHAVE_FONTCONFIG -DHAVE_FTCIRCLE GD.c
+Running Mkbootstrap for GD ()
+chmod 644 GD.bs
+rm -f blib/arch/auto/GD/GD.so
+cc  -shared -O2 -g -L/usr/local/lib -fstack-protector GD.o  -o blib/arch/auto/GD/GD.so 	\
+	   -L/usr/lib/x86_64-linux-gnu -L/usr/lib/x86_64-linux-gnu -L/usr/lib/x86_64-linux-gnu -lXpm -lX11 -ljpeg -lfontconfig -lfreetype -lpng12 -lz -lm -lgd  	\
+	  
+chmod 755 blib/arch/auto/GD/GD.so
+cp GD.bs blib/arch/auto/GD/GD.bs
+chmod 644 blib/arch/auto/GD/GD.bs
+/usr/bin/perl "-Iblib/arch" "-Iblib/lib" bdf_scripts/bdf2gdfont.PLS bdf_scripts/bdf2gdfont.pl
+Extracting bdf2gdfont.pl (with variable substitutions)
+cp bdf_scripts/bdf2gdfont.pl blib/script/bdf2gdfont.pl
+/usr/bin/perl -MExtUtils::MY -e 'MY->fixin(shift)' -- blib/script/bdf2gdfont.pl
+Manifying blib/man1/bdf2gdfont.pl.1p
+Manifying blib/man3/GD::Polyline.3pm
+Manifying blib/man3/GD::Image.3pm
+Manifying blib/man3/GD::Simple.3pm
+Manifying blib/man3/GD.3pm
+Manifying blib/man3/GD::Polygon.3pm
+Manifying blib/man1/bdf2gdfont.pl.1p
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/auto/GD/GD.bs
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/auto/GD/GD.so
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/qd.pl
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/GD.pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/auto/GD/autosplit.ix
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/GD/Polyline.pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/GD/Group.pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/GD/Simple.pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/GD/Image.pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/GD/Polygon.pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/man/man1/bdf2gdfont.pl.1p
+Installing /var/www/hosdb/static_files/jbrowse/extlib/man/man3/GD::Polyline.3pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/man/man3/GD::Image.3pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/man/man3/GD::Polygon.3pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/man/man3/GD.3pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/man/man3/GD::Simple.3pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/bin/bdf2gdfont.pl
+Appending installation info to /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/perllocal.pod
+OK
+Successfully installed GD-2.46
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/.meta/GD-2.46/install.json
+<== Installed dependencies for .. Finishing.
+2 distributions installed
++ bin/cpanm -v --notest -l extlib/ --installdeps .
+cpanm (App::cpanminus) 1.5007 on perl 5.014002 built for x86_64-linux-gnu-thread-multi
+Work directory is /root/.cpanm/work/1342048806.2645
+You have make /usr/bin/make
+You have /usr/bin/wget
+You have /bin/tar: tar (GNU tar) 1.26
+Copyright (C) 2011 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by John Gilmore and Jay Fenlason.
+You have /usr/bin/unzip
+Checking if you have ExtUtils::MakeMaker 6.31 ... Yes (6.57_05)
+Checking if you have ExtUtils::Install 1.46 ... Yes (1.56)
+--> Working on .
+Entering /var/www/hosdb/static_files/jbrowse
+Checking configure dependencies from META.yml
+Checking if you have ExtUtils::MakeMaker 6.30 ... Yes (6.57_05)
+Configuring JBrowse-1.4.1 ... Running Makefile.PL
+Writing Makefile for JBrowse
+Writing MYMETA.yml
+OK
+Checking dependencies from MYMETA.yml ...
+Checking if you have Test::More 0 ... Yes (0.98)
+Checking if you have Pod::Usage 0 ... Yes (1.36)
+Checking if you have Storable 0 ... Yes (2.27)
+Checking if you have PerlIO::gzip 0 ... Yes (0.18)
+Checking if you have List::Util 0 ... Yes (1.23)
+Checking if you have Digest::MurmurHash 0 ... Yes (0.11)
+Checking if you have File::Path 0 ... Yes (2.08_01)
+Checking if you have local::lib 0 ... Yes (1.008004)
+Checking if you have DBI 0 ... Yes (1.616)
+Checking if you have Bio::FeatureIO 0 ... Yes (undef)
+Checking if you have warnings 0 ... Yes (1.12)
+Checking if you have base 0 ... Yes (2.16)
+Checking if you have Getopt::Long 0 ... Yes (2.38)
+Checking if you have IO::File 0 ... Yes (1.15)
+Checking if you have Bio::Index::Fasta 0 ... Yes (undef)
+Checking if you have Data::Dumper 0 ... Yes (2.130_02)
+Checking if you have Bio::Root::Version 1.006000 ... Yes (1.006901)
+Checking if you have vars 0 ... Yes (1.02)
+Checking if you have Bio::Annotation::SimpleValue 0 ... Yes (undef)
+Checking if you have strict 0 ... Yes (1.04)
+Checking if you have File::Temp 0 ... Yes (0.22)
+Checking if you have Scalar::Util 0 ... Yes (1.23)
+Checking if you have FindBin 0 ... Yes (1.50)
+Checking if you have Fcntl 0 ... Yes (1.11)
+Checking if you have File::Spec 0 ... Yes (3.33)
+Checking if you have Heap::Simple 0 ... Yes (0.13)
+Checking if you have Heap::Simple::XS 0 ... Yes (0.10)
+Checking if you have POSIX 0 ... Yes (1.24)
+Checking if you have Devel::Size 0 ... Yes (0.77)
+Checking if you have File::Spec::Functions 0 ... Yes (3.33)
+Checking if you have Bio::GFF3::LowLevel::Parser 0 ... Yes (1.3)
+Checking if you have Hash::Merge 0 ... Yes (0.12)
+Checking if you have constant 0 ... Yes (1.21)
+Checking if you have GD::Image 0 ... Yes (2.38)
+Checking if you have Exporter 0 ... Yes (5.64_03)
+Checking if you have Bio::OntologyIO 0 ... Yes (undef)
+Checking if you have Carp 0 ... Yes (1.20)
+Checking if you have Bio::SeqFeature::Annotated 0 ... Yes (undef)
+Checking if you have File::Basename 0 ... Yes (2.82)
+Checking if you have JSON 2 ... Yes (2.53)
+Checking if you have Cwd 0 ... Yes (3.36)
+<== Installed dependencies for .. Finishing.
++ set -e
++ bin/cpanm -v --notest -l extlib/ --installdeps .
+cpanm (App::cpanminus) 1.5007 on perl 5.014002 built for x86_64-linux-gnu-thread-multi
+Work directory is /root/.cpanm/work/1342048807.2654
+You have make /usr/bin/make
+You have /usr/bin/wget
+You have /bin/tar: tar (GNU tar) 1.26
+Copyright (C) 2011 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by John Gilmore and Jay Fenlason.
+You have /usr/bin/unzip
+Checking if you have ExtUtils::MakeMaker 6.31 ... Yes (6.57_05)
+Checking if you have ExtUtils::Install 1.46 ... Yes (1.56)
+--> Working on .
+Entering /var/www/hosdb/static_files/jbrowse
+Checking configure dependencies from META.yml
+Checking if you have ExtUtils::MakeMaker 6.30 ... Yes (6.57_05)
+Configuring JBrowse-1.4.1 ... Running Makefile.PL
+Writing Makefile for JBrowse
+Writing MYMETA.yml
+OK
+Checking dependencies from MYMETA.yml ...
+Checking if you have Test::More 0 ... Yes (0.98)
+Checking if you have Pod::Usage 0 ... Yes (1.36)
+Checking if you have Storable 0 ... Yes (2.27)
+Checking if you have PerlIO::gzip 0 ... Yes (0.18)
+Checking if you have List::Util 0 ... Yes (1.23)
+Checking if you have Digest::MurmurHash 0 ... Yes (0.11)
+Checking if you have File::Path 0 ... Yes (2.08_01)
+Checking if you have local::lib 0 ... Yes (1.008004)
+Checking if you have DBI 0 ... Yes (1.616)
+Checking if you have Bio::FeatureIO 0 ... Yes (undef)
+Checking if you have warnings 0 ... Yes (1.12)
+Checking if you have base 0 ... Yes (2.16)
+Checking if you have Getopt::Long 0 ... Yes (2.38)
+Checking if you have IO::File 0 ... Yes (1.15)
+Checking if you have Bio::Index::Fasta 0 ... Yes (undef)
+Checking if you have Data::Dumper 0 ... Yes (2.130_02)
+Checking if you have Bio::Root::Version 1.006000 ... Yes (1.006901)
+Checking if you have vars 0 ... Yes (1.02)
+Checking if you have Bio::Annotation::SimpleValue 0 ... Yes (undef)
+Checking if you have strict 0 ... Yes (1.04)
+Checking if you have File::Temp 0 ... Yes (0.22)
+Checking if you have Scalar::Util 0 ... Yes (1.23)
+Checking if you have FindBin 0 ... Yes (1.50)
+Checking if you have Fcntl 0 ... Yes (1.11)
+Checking if you have File::Spec 0 ... Yes (3.33)
+Checking if you have Heap::Simple 0 ... Yes (0.13)
+Checking if you have Heap::Simple::XS 0 ... Yes (0.10)
+Checking if you have POSIX 0 ... Yes (1.24)
+Checking if you have Devel::Size 0 ... Yes (0.77)
+Checking if you have File::Spec::Functions 0 ... Yes (3.33)
+Checking if you have Bio::GFF3::LowLevel::Parser 0 ... Yes (1.3)
+Checking if you have Hash::Merge 0 ... Yes (0.12)
+Checking if you have constant 0 ... Yes (1.21)
+Checking if you have GD::Image 0 ... Yes (2.38)
+Checking if you have Exporter 0 ... Yes (5.64_03)
+Checking if you have Bio::OntologyIO 0 ... Yes (undef)
+Checking if you have Carp 0 ... Yes (1.20)
+Checking if you have Bio::SeqFeature::Annotated 0 ... Yes (undef)
+Checking if you have File::Basename 0 ... Yes (2.82)
+Checking if you have JSON 2 ... Yes (2.53)
+Checking if you have Cwd 0 ... Yes (3.36)
+<== Installed dependencies for .. Finishing.
++ rm -rf sample_data/json/volvox
++ bin/prepare-refseqs.pl --fasta docs/tutorial/data_files/volvox.fa --out sample_data/json/volvox
++ bin/biodb-to-json.pl -v --conf docs/tutorial/conf_files/volvox.json --out sample_data/json/volvox
+
+working on refseq ctgA
+working on track ExampleFeatures
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'remark'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'ExampleFeatures',
+          'style' => {
+                       'className' => 'feature2'
+                     },
+          'compress' => 0,
+          'key' => 'Example Features'
+        };
+searching for features of type: remark
+working on track NameTest
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'protein_coding_primary_transcript',
+                         'polypeptide'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'NameTest',
+          'style' => {
+                       'className' => 'feature2'
+                     },
+          'compress' => 0,
+          'key' => 'Name test track'
+        };
+searching for features of type: protein_coding_primary_transcript, polypeptide
+working on track snps
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'SNP'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'snps',
+          'style' => {
+                       'className' => 'triangle hgred'
+                     },
+          'compress' => 0,
+          'key' => 'Test SNPs'
+        };
+searching for features of type: SNP
+working on track Motifs
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'polypeptide_domain'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'Motifs',
+          'style' => {
+                       'className' => 'feature3'
+                     },
+          'compress' => 0,
+          'description' => 1,
+          'key' => 'Example motifs'
+        };
+searching for features of type: polypeptide_domain
+working on track Alignments
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'match'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'Alignments',
+          'style' => {
+                       'className' => 'feature4'
+                     },
+          'compress' => 0,
+          'category' => 'Alignments',
+          'key' => 'Example alignments'
+        };
+searching for features of type: match
+working on track Genes
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'gene'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'Genes',
+          'style' => {
+                       'className' => 'feature5'
+                     },
+          'compress' => 0,
+          'key' => 'Protein-coding genes'
+        };
+searching for features of type: gene
+working on track ReadingFrame
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'mRNA'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'ReadingFrame',
+          'style' => {
+                       'className' => 'dblhelix'
+                     },
+          'compress' => 0,
+          'category' => 'Genes',
+          'key' => 'Frame usage'
+        };
+searching for features of type: mRNA
+working on track CDS
+mergedTrackCfg: $VAR1 = {
+          'autocomplete' => 'all',
+          'track' => 'CDS',
+          'style' => {
+                       'className' => 'cds',
+                       'linkTemplate' => 'http://example.com/{name}-{start}-{end}'
+                     },
+          'key' => 'Predicted genes',
+          'feature' => [
+                         'CDS:predicted',
+                         'mRNA:exonerate',
+                         'mRNA:predicted'
+                       ],
+          'phase' => 1,
+          'compress' => 0,
+          'category' => 'Genes'
+        };
+searching for features of type: CDS:predicted, mRNA:exonerate, mRNA:predicted
+working on track Transcript
+mergedTrackCfg: $VAR1 = {
+          'autocomplete' => 'all',
+          'track' => 'Transcript',
+          'style' => {
+                       'className' => 'transcript',
+                       'subfeatureClasses' => {
+                                                'CDS' => 'transcript-CDS',
+                                                'UTR' => 'transcript-UTR'
+                                              },
+                       'arrowheadClass' => 'transcript-arrowhead'
+                     },
+          'description' => 1,
+          'key' => 'Exonerate predictions',
+          'feature' => [
+                         'mRNA:exonerate'
+                       ],
+          'compress' => 0,
+          'category' => 'Genes',
+          'subfeatures' => bless( do{\(my $o = 1)}, 'JSON::XS::Boolean' )
+        };
+searching for features of type: mRNA:exonerate
+working on track Clones
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'BAC'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'Clones',
+          'style' => {
+                       'className' => 'exon'
+                     },
+          'compress' => 0,
+          'description' => 1,
+          'key' => 'Fingerprinted BACs'
+        };
+searching for features of type: BAC
+working on track EST
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'EST_match:est'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'EST',
+          'style' => {
+                       'className' => 'est'
+                     },
+          'compress' => 0,
+          'key' => 'ESTs'
+        };
+searching for features of type: EST_match:est
+
+working on refseq ctgB
+working on track ExampleFeatures
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'remark'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'ExampleFeatures',
+          'style' => {
+                       'className' => 'feature2'
+                     },
+          'compress' => 0,
+          'key' => 'Example Features'
+        };
+searching for features of type: remark
+working on track NameTest
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'protein_coding_primary_transcript',
+                         'polypeptide'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'NameTest',
+          'style' => {
+                       'className' => 'feature2'
+                     },
+          'compress' => 0,
+          'key' => 'Name test track'
+        };
+searching for features of type: protein_coding_primary_transcript, polypeptide
+working on track snps
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'SNP'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'snps',
+          'style' => {
+                       'className' => 'triangle hgred'
+                     },
+          'compress' => 0,
+          'key' => 'Test SNPs'
+        };
+searching for features of type: SNP
+working on track Motifs
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'polypeptide_domain'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'Motifs',
+          'style' => {
+                       'className' => 'feature3'
+                     },
+          'compress' => 0,
+          'description' => 1,
+          'key' => 'Example motifs'
+        };
+searching for features of type: polypeptide_domain
+working on track Alignments
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'match'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'Alignments',
+          'style' => {
+                       'className' => 'feature4'
+                     },
+          'compress' => 0,
+          'category' => 'Alignments',
+          'key' => 'Example alignments'
+        };
+searching for features of type: match
+working on track Genes
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'gene'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'Genes',
+          'style' => {
+                       'className' => 'feature5'
+                     },
+          'compress' => 0,
+          'key' => 'Protein-coding genes'
+        };
+searching for features of type: gene
+working on track ReadingFrame
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'mRNA'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'ReadingFrame',
+          'style' => {
+                       'className' => 'dblhelix'
+                     },
+          'compress' => 0,
+          'category' => 'Genes',
+          'key' => 'Frame usage'
+        };
+searching for features of type: mRNA
+working on track CDS
+mergedTrackCfg: $VAR1 = {
+          'autocomplete' => 'all',
+          'track' => 'CDS',
+          'style' => {
+                       'className' => 'cds',
+                       'linkTemplate' => 'http://example.com/{name}-{start}-{end}'
+                     },
+          'key' => 'Predicted genes',
+          'feature' => [
+                         'CDS:predicted',
+                         'mRNA:exonerate',
+                         'mRNA:predicted'
+                       ],
+          'phase' => 1,
+          'compress' => 0,
+          'category' => 'Genes'
+        };
+searching for features of type: CDS:predicted, mRNA:exonerate, mRNA:predicted
+working on track Transcript
+mergedTrackCfg: $VAR1 = {
+          'autocomplete' => 'all',
+          'track' => 'Transcript',
+          'style' => {
+                       'className' => 'transcript',
+                       'subfeatureClasses' => {
+                                                'CDS' => 'transcript-CDS',
+                                                'UTR' => 'transcript-UTR'
+                                              },
+                       'arrowheadClass' => 'transcript-arrowhead'
+                     },
+          'description' => 1,
+          'key' => 'Exonerate predictions',
+          'feature' => [
+                         'mRNA:exonerate'
+                       ],
+          'compress' => 0,
+          'category' => 'Genes',
+          'subfeatures' => bless( do{\(my $o = 1)}, 'JSON::XS::Boolean' )
+        };
+searching for features of type: mRNA:exonerate
+working on track Clones
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'BAC'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'Clones',
+          'style' => {
+                       'className' => 'exon'
+                     },
+          'compress' => 0,
+          'description' => 1,
+          'key' => 'Fingerprinted BACs'
+        };
+searching for features of type: BAC
+working on track EST
+mergedTrackCfg: $VAR1 = {
+          'feature' => [
+                         'EST_match:est'
+                       ],
+          'autocomplete' => 'all',
+          'track' => 'EST',
+          'style' => {
+                       'className' => 'est'
+                     },
+          'compress' => 0,
+          'key' => 'ESTs'
+        };
+searching for features of type: EST_match:est
++ bin/generate-names.pl -v --out sample_data/json/volvox
+70 total names, with 70 in the root chunk
++ '[' -d sample_data/json/modencode ']'
++ mkdir -p sample_data/json/modencode/tracks
++ ln -sf ../../volvox/tracks/volvox_microarray.wig sample_data/json/modencode/tracks/volvox_microarray.wig
++ mkdir -p sample_data/raw
++ '[' '!' -e sample_data/raw/volvox ']'
++ ln -s ../../docs/tutorial/data_files sample_data/raw/volvox
++ ln -sf ../../docs/tutorial/conf_files/volvox.json sample_data/raw/
++ cd wig2png
++ ./configure
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether ln -s works... yes
+checking for library containing png_create_write_struct... -lpng
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking png.h usability... yes
+checking png.h presence... yes
+checking for png.h... yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for pid_t... yes
+checking for C/C++ restrict keyword... __restrict
+checking for size_t... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for ptrdiff_t... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking whether lstat correctly handles trailing slash... yes
+checking whether lstat accepts an empty string... no
+checking whether lstat correctly handles trailing slash... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for strftime... yes
+checking for dup2... yes
+checking for floor... no
+checking for memmove... yes
+checking for pow... no
+checking for regcomp... yes
+checking for sqrt... no
+checking for strchr... yes
+checking for strcspn... yes
+checking for strrchr... yes
+checking for strspn... yes
+checking for strstr... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/config.h
++ make
+g++ -g -O2 -include src/config.h -o ../bin/wig2png src/wig2png.cc src/opts_list.cc  -lpng 
++ cd ..
++ set -x
++ bin/wig-to-json.pl --wig docs/tutorial/data_files/volvox_microarray.wig --out sample_data/json/volvox
+Can't locate Bio/DB/Sam.pm in @INC (@INC contains: /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5 extlib/lib/perl5/x86_64-linux-gnu-thread-multi extlib/lib/perl5 /etc/perl /usr/local/lib/perl/5.14.2 /usr/local/share/perl/5.14.2 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.14 /usr/share/perl/5.14 /usr/local/lib/site_perl .).
+BEGIN failed--compilation aborted.
++ '[' '!' -e samtools ']'
++ make -C samtools -j3 lib
+make: Entering directory `/var/www/hosdb/static_files/jbrowse/samtools'
+gcc -c -fPIC -g -Wall -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_USE_KNETFILE -D_CURSES_LIB=1 -I. bgzf.c -o bgzf.o
+gcc -c -fPIC -g -Wall -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_USE_KNETFILE -D_CURSES_LIB=1 -I. bam_aux.c -o bam_aux.o
+gcc -c -fPIC -g -Wall -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_USE_KNETFILE -D_CURSES_LIB=1 -I. bam.c -o bam.o
+bgzf.c: In function ‘bgzf_close’:
+bgzf.c:630:8: warning: variable ‘count’ set but not used [-Wunused-but-set-variable]
+gcc -c -fPIC -g -Wall -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_USE_KNETFILE -D_CURSES_LIB=1 -I. bam_import.c -o bam_import.o
+gcc -c -fPIC -g -Wall -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_USE_KNETFILE -D_CURSES_LIB=1 -I. sam.c -o sam.o
+gcc -c -fPIC -g -Wall -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_USE_KNETFILE -D_CURSES_LIB=1 -I. bam_index.c -o bam_index.o
+bam_index.c: In function ‘bam_index_load_core’:
+bam_index.c:335:7: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
+bam_index.c:342:7: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
+bam_index.c:355:8: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
+bam_index.c:358:9: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
+bam_index.c:362:9: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
+bam_index.c:366:9: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
+bam_index.c:376:8: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
+bam_index.c:380:8: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
+gcc -c -fPIC -g -Wall -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_USE_KNETFILE -D_CURSES_LIB=1 -I. bam_pileup.c -o bam_pileup.o
+bam_pileup.c: In function ‘resolve_cigar2’:
+bam_pileup.c:75:9: warning: variable ‘is_head’ set but not used [-Wunused-but-set-variable]
+gcc -c -fPIC -g -Wall -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_USE_KNETFILE -D_CURSES_LIB=1 -I. bam_lpileup.c -o bam_lpileup.o
+gcc -c -fPIC -g -Wall -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_USE_KNETFILE -D_CURSES_LIB=1 -I. bam_md.c -o bam_md.o
+gcc -c -fPIC -g -Wall -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_USE_KNETFILE -D_CURSES_LIB=1 -I. razf.c -o razf.o
+razf.c: In function ‘razf_close’:
+razf.c:804:9: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+razf.c:805:9: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+razf.c:808:9: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+razf.c:810:9: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+razf.c: In function ‘razf_end_flush’:
+razf.c:258:9: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+razf.c: In function ‘_razf_write’:
+razf.c:201:8: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+razf.c: In function ‘save_zindex’:
+razf.c:96:17: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+razf.c:99:8: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+razf.c:106:7: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+razf.c:107:7: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+razf.c: In function ‘razf_flush’:
+razf.c:221:8: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+razf.c:234:9: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+gcc -c -fPIC -g -Wall -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_USE_KNETFILE -D_CURSES_LIB=1 -I. faidx.c -o faidx.o
+gcc -c -fPIC -g -Wall -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_USE_KNETFILE -D_CURSES_LIB=1 -I. bedidx.c -o bedidx.o
+gcc -c -fPIC -g -Wall -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_USE_KNETFILE -D_CURSES_LIB=1 -I. knetfile.c -o knetfile.o
+knetfile.c: In function ‘khttp_connect_file’:
+knetfile.c:415:2: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+knetfile.c: In function ‘kftp_send_cmd’:
+knetfile.c:236:2: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+gcc -c -fPIC -g -Wall -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_USE_KNETFILE -D_CURSES_LIB=1 -I. bam_sort.c -o bam_sort.o
+gcc -c -fPIC -g -Wall -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_USE_KNETFILE -D_CURSES_LIB=1 -I. sam_header.c -o sam_header.o
+gcc -c -fPIC -g -Wall -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_USE_KNETFILE -D_CURSES_LIB=1 -I. bam_reheader.c -o bam_reheader.o
+bam_reheader.c: In function ‘bam_reheader’:
+bam_reheader.c:11:16: warning: variable ‘old’ set but not used [-Wunused-but-set-variable]
+gcc -c -fPIC -g -Wall -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_USE_KNETFILE -D_CURSES_LIB=1 -I. kprobaln.c -o kprobaln.o
+kprobaln.c: In function ‘kpa_glocal’:
+kprobaln.c:78:21: warning: variable ‘is_diff’ set but not used [-Wunused-but-set-variable]
+gcc -c -fPIC -g -Wall -O2 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_USE_KNETFILE -D_CURSES_LIB=1 -I. bam_cat.c -o bam_cat.o
+ar -csru libbam.a bgzf.o kstring.o bam_aux.o bam.o bam_import.o sam.o bam_index.o bam_pileup.o bam_lpileup.o bam_md.o razf.o faidx.o bedidx.o knetfile.o bam_sort.o sam_header.o bam_reheader.o kprobaln.o bam_cat.o
+make: Leaving directory `/var/www/hosdb/static_files/jbrowse/samtools'
++ export SAMTOOLS=/var/www/hosdb/static_files/jbrowse/samtools
++ SAMTOOLS=/var/www/hosdb/static_files/jbrowse/samtools
++ echo 'samtools in env at '\''/var/www/hosdb/static_files/jbrowse/samtools'\'''
+samtools in env at '/var/www/hosdb/static_files/jbrowse/samtools'
++ set +e
++ bin/cpanm -v -l extlib Bio::DB::Sam
+cpanm (App::cpanminus) 1.5007 on perl 5.014002 built for x86_64-linux-gnu-thread-multi
+Work directory is /root/.cpanm/work/1342048821.3969
+You have make /usr/bin/make
+You have /usr/bin/wget
+You have /bin/tar: tar (GNU tar) 1.26
+Copyright (C) 2011 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by John Gilmore and Jay Fenlason.
+You have /usr/bin/unzip
+Searching Bio::DB::Sam on cpanmetadb ...
+--2012-07-12 07:20:21--  http://cpanmetadb.plackperl.org/v1.0/package/Bio::DB::Sam
+Resolving cpanmetadb.plackperl.org (cpanmetadb.plackperl.org)... 64.71.157.43, 199.27.77.5
+Connecting to cpanmetadb.plackperl.org (cpanmetadb.plackperl.org)|64.71.157.43|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 62 [text/x-yaml]
+Saving to: `STDOUT'
+
+     0K                                                       100% 7.47M=0s
+
+2012-07-12 07:20:22 (7.47 MB/s) - written to stdout [62/62]
+
+Checking if you have ExtUtils::MakeMaker 6.31 ... Yes (6.57_05)
+Checking if you have ExtUtils::Install 1.46 ... Yes (1.56)
+--> Working on Bio::DB::Sam
+Fetching http://search.cpan.org/CPAN/authors/id/L/LD/LDS/Bio-SamTools-1.33.tar.gz ... --2012-07-12 07:20:22--  http://search.cpan.org/CPAN/authors/id/L/LD/LDS/Bio-SamTools-1.33.tar.gz
+Resolving search.cpan.org (search.cpan.org)... 199.15.176.161
+Connecting to search.cpan.org (search.cpan.org)|199.15.176.161|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: http://mirrors.ustc.edu.cn/CPAN/authors/id/L/LD/LDS/Bio-SamTools-1.33.tar.gz [following]
+--2012-07-12 07:20:22--  http://mirrors.ustc.edu.cn/CPAN/authors/id/L/LD/LDS/Bio-SamTools-1.33.tar.gz
+Resolving mirrors.ustc.edu.cn (mirrors.ustc.edu.cn)... 202.141.160.110, 2001:da8:d800:95::110
+Connecting to mirrors.ustc.edu.cn (mirrors.ustc.edu.cn)|202.141.160.110|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 332340 (325K) [text/plain]
+Saving to: `Bio-SamTools-1.33.tar.gz'
+
+     0K .......... .......... .......... .......... .......... 15%  485K 1s
+    50K .......... .......... .......... .......... .......... 30% 1.83M 0s
+   100K .......... .......... .......... .......... .......... 46% 1.88M 0s
+   150K .......... .......... .......... .......... .......... 61% 1.96M 0s
+   200K .......... .......... .......... .......... .......... 77% 11.7M 0s
+   250K .......... .......... .......... .......... .......... 92% 1.43M 0s
+   300K .......... .......... ....                            100%  257M=0.2s
+
+2012-07-12 07:20:23 (1.45 MB/s) - `Bio-SamTools-1.33.tar.gz' saved [332340/332340]
+
+OK
+Unpacking Bio-SamTools-1.33.tar.gz
+Bio-SamTools-1.33
+Bio-SamTools-1.33/Changes
+Bio-SamTools-1.33/MANIFEST
+Bio-SamTools-1.33/META.json
+Bio-SamTools-1.33/README
+Bio-SamTools-1.33/typemap
+Bio-SamTools-1.33/META.yml
+Bio-SamTools-1.33/DISCLAIMER
+Bio-SamTools-1.33/Build.PL
+Bio-SamTools-1.33/LICENSE
+Bio-SamTools-1.33/bin
+Bio-SamTools-1.33/bin/genomeCoverageBed.pl
+Bio-SamTools-1.33/bin/bamToGBrowse.pl
+Bio-SamTools-1.33/lib
+Bio-SamTools-1.33/lib/Bio
+Bio-SamTools-1.33/lib/Bio/DB
+Bio-SamTools-1.33/lib/Bio/DB/Sam.pm
+Bio-SamTools-1.33/lib/Bio/DB/Sam.xs
+Bio-SamTools-1.33/lib/Bio/DB/Bam
+Bio-SamTools-1.33/lib/Bio/DB/Bam/PileupWrapper.pm
+Bio-SamTools-1.33/lib/Bio/DB/Bam/Pileup.pm
+Bio-SamTools-1.33/lib/Bio/DB/Bam/AlignWrapper.pm
+Bio-SamTools-1.33/lib/Bio/DB/Bam/ReadIterator.pm
+Bio-SamTools-1.33/lib/Bio/DB/Bam/Alignment.pm
+Bio-SamTools-1.33/lib/Bio/DB/Bam/Query.pm
+Bio-SamTools-1.33/lib/Bio/DB/Bam/FetchIterator.pm
+Bio-SamTools-1.33/lib/Bio/DB/Bam/Target.pm
+Bio-SamTools-1.33/lib/Bio/DB/Sam
+Bio-SamTools-1.33/lib/Bio/DB/Sam/Constants.pm
+Bio-SamTools-1.33/lib/Bio/DB/Sam/Segment.pm
+Bio-SamTools-1.33/lib/Bio/DB/Sam/SamToGBrowse.pm
+Bio-SamTools-1.33/t
+Bio-SamTools-1.33/t/01sam.t
+Bio-SamTools-1.33/t/data
+Bio-SamTools-1.33/t/data/ex1.fa
+Bio-SamTools-1.33/t/data/dm3_3R_4766911_4767130.sam.sorted.bam
+Bio-SamTools-1.33/t/data/ex1.sam.gz
+Bio-SamTools-1.33/t/data/00README.txt
+Bio-SamTools-1.33/t/data/ex1.bam
+Bio-SamTools-1.33/t/data/dm3_3R_4766911_4767130.sam
+Bio-SamTools-1.33/t/data/dm3_3R_4766911_4767130.sam.bam
+Entering Bio-SamTools-1.33
+Checking configure dependencies from META.yml
+Checking if you have Module::Build 0.38 ... Yes (0.3800)
+Configuring Bio-SamTools-1.33 ... Running Build.PL
+Found /var/www/hosdb/static_files/jbrowse/samtools/bam.h and /var/www/hosdb/static_files/jbrowse/samtools/libbam.a.
+Created MYMETA.yml and MYMETA.json
+Creating new 'Build' script for 'Bio-SamTools' version '1.33'
+OK
+Checking dependencies from MYMETA.json ...
+Checking if you have ExtUtils::CBuilder 0 ... Yes (0.280203)
+Checking if you have Bio::Root::Version 1.006009001 ... Yes (1.006901)
+Building and testing Bio-SamTools-1.33 ... Building Bio-SamTools
+cc -I/var/www/hosdb/static_files/jbrowse/samtools -I/usr/lib/perl/5.14/CORE -DXS_VERSION="1.33" -DVERSION="1.33" -fPIC -D_IOLIB=2 -D_FILE_OFFSET_BITS=64 -Wformat=0 -c -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fno-strict-aliasing -pipe -fstack-protector -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -g -o lib/Bio/DB/Sam.o lib/Bio/DB/Sam.c
+ExtUtils::Mkbootstrap::Mkbootstrap('blib/arch/auto/Bio/DB/Sam/Sam.bs')
+cc -shared -O2 -g -L/usr/local/lib -fstack-protector -o blib/arch/auto/Bio/DB/Sam/Sam.so lib/Bio/DB/Sam.o -L/var/www/hosdb/static_files/jbrowse/samtools -lbam -lz
+[fai_load] build FASTA index.
+[bam_parse_region] fail to determine the sequence name.
+t/01sam.t .. ok
+All tests successful.
+Files=1, Tests=112,  1 wallclock secs ( 0.02 usr  0.00 sys +  0.78 cusr  0.06 csys =  0.86 CPU)
+Result: PASS
+Building Bio-SamTools
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/auto/Bio/DB/Sam/Sam.bs
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/auto/Bio/DB/Sam/Sam.so
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/Bio/DB/Sam.pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/Bio/DB/Sam/Segment.pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/Bio/DB/Sam/SamToGBrowse.pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/Bio/DB/Sam/Constants.pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/Bio/DB/Bam/FetchIterator.pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/Bio/DB/Bam/ReadIterator.pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/Bio/DB/Bam/Pileup.pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/Bio/DB/Bam/Query.pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/Bio/DB/Bam/PileupWrapper.pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/Bio/DB/Bam/Alignment.pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/Bio/DB/Bam/AlignWrapper.pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/Bio/DB/Bam/Target.pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/man/man3/Bio::DB::Bam::Target.3pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/man/man3/Bio::DB::Bam::PileupWrapper.3pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/man/man3/Bio::DB::Bam::AlignWrapper.3pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/man/man3/Bio::DB::Bam::Query.3pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/man/man3/Bio::DB::Bam::Pileup.3pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/man/man3/Bio::DB::Sam.3pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/man/man3/Bio::DB::Bam::Alignment.3pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/man/man3/Bio::DB::Sam::Constants.3pm
+Installing /var/www/hosdb/static_files/jbrowse/extlib/bin/bamToGBrowse.pl
+Installing /var/www/hosdb/static_files/jbrowse/extlib/bin/genomeCoverageBed.pl
+OK
+Successfully installed Bio-SamTools-1.33
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/.meta/Bio-SamTools-1.33/MYMETA.json
+Installing /var/www/hosdb/static_files/jbrowse/extlib/lib/perl5/x86_64-linux-gnu-thread-multi/.meta/Bio-SamTools-1.33/install.json
+1 distribution installed
++ set -e
++ bin/cpanm -v -l extlib Bio::DB::Sam
+cpanm (App::cpanminus) 1.5007 on perl 5.014002 built for x86_64-linux-gnu-thread-multi
+Work directory is /root/.cpanm/work/1342048828.4056
+You have make /usr/bin/make
+You have /usr/bin/wget
+You have /bin/tar: tar (GNU tar) 1.26
+Copyright (C) 2011 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by John Gilmore and Jay Fenlason.
+You have /usr/bin/unzip
+Searching Bio::DB::Sam on cpanmetadb ...
+--2012-07-12 07:20:28--  http://cpanmetadb.plackperl.org/v1.0/package/Bio::DB::Sam
+Resolving cpanmetadb.plackperl.org (cpanmetadb.plackperl.org)... 199.27.77.5, 64.71.157.43
+Connecting to cpanmetadb.plackperl.org (cpanmetadb.plackperl.org)|199.27.77.5|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 62 [text/x-yaml]
+Saving to: `STDOUT'
+
+     0K                                                       100% 7.68M=0s
+
+2012-07-12 07:20:28 (7.68 MB/s) - written to stdout [62/62]
+
+Checking if you have ExtUtils::MakeMaker 6.31 ... Yes (6.57_05)
+Checking if you have ExtUtils::Install 1.46 ... Yes (1.56)
+Bio::DB::Sam is up to date. (1.33)
++ bin/bam-to-json.pl --bam docs/tutorial/data_files/volvox-sorted.bam --tracklabel bam_simulated --key 'Simulated next-gen reads' --cssClass basic --clientConfig '{"featureCss": "background-color: #66F; height: 8px", "histCss": "background-color: #88F"}' --out sample_data/json/volvox

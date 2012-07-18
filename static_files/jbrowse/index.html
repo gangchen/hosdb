@@ -1,0 +1,49 @@
+<!DOCTYPE html
+	  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  <head>
+    <title>JBrowse</title>
+    <link rel="stylesheet" type="text/css" href="jslib/dijit/themes/tundra/tundra.css"></link>
+    <link rel="stylesheet" type="text/css" href="jslib/dojo/resources/dojo.css"></link>
+    <link rel="stylesheet" type="text/css" href="genome.css"></link>
+
+    <script type="text/javascript" src="jslib/dojo/dojo.js" djConfig="isDebug: false"></script>
+    <script type="text/javascript" src="jslib/dojo/jbrowse_dojo.js" ></script>
+    <script type="text/javascript" src="jslib/dojo/jbrowse_dojo_faceted_tracksel.js" ></script>
+
+    <script type="text/javascript" src="jbrowse-index-min.js"></script>
+
+
+    <script type="text/javascript">
+    /* <![CDATA[ */
+           var queryParams = dojo.queryToObject( window.location.search.slice(1) );
+           var dataRoot = queryParams.data || 'data';
+           var b = new Browser({
+                                   containerID: "GenomeBrowser",
+                                   refSeqs: dataRoot + "/seq/refSeqs.json",
+                                   include: [
+                                     'jbrowse_conf.json',
+                                     dataRoot + "/trackList.json"
+                                   ],
+                                   nameUrl: dataRoot + "/names/root.json",
+                                   defaultTracks: "DNA,gene,mRNA,noncodingRNA",
+                                   queryParams: queryParams,
+                                   location: queryParams.loc,
+                                   forceTracks: queryParams.tracks,
+				   show_nav: queryParams.nav,
+				   show_tracklist: queryParams.tracklist,
+				   show_overview: queryParams.overview,
+				   config_list: queryParams.config
+                               });
+    /* ]]> */
+    </script>
+  </head>
+
+  <body>
+    <div id="GenomeBrowser" style="height: 100%; width: 100%; padding: 0; border: 0;"></div>
+    <div style="display: none">JBrowseDefaultMainPage</div>
+  </body>
+</html>

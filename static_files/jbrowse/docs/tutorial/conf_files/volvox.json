@@ -1,0 +1,96 @@
+{
+  "description": "Volvox Example Database",
+  "db_adaptor": "Bio::DB::SeqFeature::Store",
+  "db_args": { "-adaptor": "memory",
+               "-dir": "docs/tutorial/data_files" },
+
+  "TRACK DEFAULTS": {
+    "class": "feature",
+    "autocomplete": "all"
+  },
+
+  "tracks": [
+    {
+      "track": "ExampleFeatures",
+      "key": "Example Features",
+      "feature": ["remark"],
+      "autocomplete": "all",
+      "class": "feature2"
+    },
+    {
+      "track": "NameTest",
+      "feature": ["protein_coding_primary_transcript", "polypeptide"],
+      "class": "feature2",
+      "key": "Name test track"
+    },
+    {
+      "track": "snps",
+      "feature": ["SNP"],
+      "class": "triangle hgred",
+      "key": "Test SNPs"
+    },
+    {
+      "track": "Motifs",
+      "feature": ["polypeptide_domain"],
+      "class": "feature3",
+      "description": 1,
+      "key": "Example motifs"
+    },
+    {
+      "track": "Alignments",
+      "feature": ["match"],
+      "class": "feature4",
+      "key": "Example alignments",
+      "category": "Alignments"
+    },
+    {
+      "track": "Genes",
+      "feature": ["gene"],
+      "class": "feature5",
+      "key": "Protein-coding genes"
+    },
+    {
+      "track": "ReadingFrame",
+      "feature": ["mRNA"],
+      "class": "dblhelix",
+      "key": "Frame usage",
+      "category": "Genes"
+    },
+    {
+      "track": "CDS",
+      "feature": ["CDS:predicted", "mRNA:exonerate","mRNA:predicted"],
+      "class": "cds",
+      "phase": 1,
+      "key": "Predicted genes",
+      "category": "Genes",
+      "urlTemplate": "http://example.com/{name}-{start}-{end}"
+    },
+    {
+      "track": "Transcript",
+      "feature": ["mRNA:exonerate"],
+      "description": 1,
+      "class": "transcript",
+      "subfeatures": true,
+      "subfeature_classes": {
+        "CDS": "transcript-CDS",
+        "UTR": "transcript-UTR"
+      },
+      "arrowheadClass": "transcript-arrowhead",
+      "key": "Exonerate predictions",
+      "category": "Genes"
+    },
+    {
+      "track": "Clones",
+      "feature": ["BAC"],
+      "class": "exon",
+      "description": 1,
+      "key": "Fingerprinted BACs"
+    },
+    {
+      "track": "EST",
+      "feature": ["EST_match:est"],
+      "class": "est",
+      "key": "ESTs"
+    }
+  ]
+}

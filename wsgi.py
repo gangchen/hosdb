@@ -6,8 +6,9 @@ project = os.path.dirname(apache_configuration)
 workspace = os.path.dirname(project) 
 sys.path.append(workspace) 
 
-sys.path.append('/home/gang/hosdb')
-sys.path.append('/home/gang')
+sys.path.append('/var/www/hosdb')
+sys.path.append('/var/www')
+sys.path.append('/usr/lib/python2.7/dist-packages/django/')
 
 import django.core.handlers.wsgi
 import site

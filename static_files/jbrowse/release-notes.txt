@@ -1,0 +1,321 @@
+1.4.1     2012-07-10 14:58:34 America/New_York
+
+ * Made displayColumns option for the faceted track selector
+   case-insensitive, and interpret a column name of "Name" as meaning
+   the track's key.
+
+ * `bam-to-json.pl` now filters out alignments that are not at least
+   two nucleotides in length.  Thanks to Tristan Lubinski for
+   assistance.
+
+ * Introduced limits on the sizes of cookies that can be set,
+   preventing '400 bad request' errors (issue #113).
+
+1.4.0     2012-06-14 17:43:50 America/New_York
+
+ * Added a full-featured faceted track selector for users that have
+   many (hundreds or thousands) of tracks.  This can be turned on by
+   setting the `trackSelectorType` config variable to "Faceted".  See
+   the JBrowse wiki for more documentation on how to use faceted track
+   selection. (issue #95)
+
+ * Removed the dropdown selector for reference sequences in favor of
+   making the location box auto-complete reference sequence and
+   feature names.  This makes JBrowse much more scalable to large
+   numbers of reference sequences. (fixes issues #3, #60, and #101)
+
+ * Added a vertical-scrolling marker on the right side of the track
+   pane, making it much easier to discern the vertical position of the
+   track display. (issue #93).
+
+ * biodb-to-json.pl and flatfile-to-json.pl now load all available
+   feature data: all attributes of features are now encoded in the
+   JSON and are available for use by feature callbacks. (issue #72)
+
+ * Feature labels now do not scroll off screen if any part of the
+   feature is still visible (fixes issue #62).
+
+ * Added jbrowse_conf.json, a default JSON-format configuration file,
+   to the JBrowse root directory.  Makes it easier to get started
+   with more advanced JBrowse configuration.
+
+ * JBrowse instances now report usage statistics to the JBrowse
+   developers.  This data is very important to the JBrowse project,
+   since it is used to make the case to grant agencies for continuing
+   to fund JBrowse development.  No research data is transmitted, the
+   data collected is limited to standard Google Analytics, along with
+   a count of how many tracks the JBrowse instance has, how many
+   reference sequences are present, their average length, and what
+   types of tracks (wiggle, feature, etc) are present.  Users can
+   disable usage statistics by setting "suppressUsageStatistics: true"
+   in the JBrowse configuration.
+
+1.3.1     2012-04-19 17:55:44 America/New_York
+
+ * Fixed memory-management bug that caused way too much RAM to be used
+   by FeatureTrack loading (flatfile, bam, and biodb-to-json.pl) when
+   loading with very large numbers of reference sequences.  Big thanks
+   to Tristan Lubinski for help in isolating this.
+
+ * Fixed some bugs in BAM support section of setup.sh autosetup
+   script, thanks to Tristan Lubinski for help in isolating this as
+   well.
+
+ * Added an example document with an iframe running JBrowse in
+   embedded mode in docs/examples/embedded_mode.html
+
+ * flatfile-to-json.pl now loads the 'score' attribute of features in the
+   JSON.
+
+1.3.0     2012-04-13 17:04:30 America/New_York
+
+ * Added support for "rubberband" dynamic zooming, in which users can
+   click and drag to select a region to zoom to.  Dragging on any
+   scale bar, or shift-dragging on the main track pane, triggers a
+   dynamic zoom.
+
+ * Correcting a long-standing oversight, wiggle data tracks and
+   feature histograms now have numerical y-axis scales that show the
+   numerical values of the data.
+
+ * Server-side data-formatting scripts now support a --compress option
+   to compress (gzip) feature and sequence data to conserve server
+   disk space.  Using this option requires some web server
+   configuration.  Under Apache, AllowOverride FileInfo (or
+   AllowOverride All) must be set for the JBrowse data directories in
+   order to use the included .htaccess files, and mod_headers and
+   mod_setenvif must be installed and enabled.  Under nginx a
+   configuration snippet like the following should be included in the
+   configuration:
+
+      location ~* "\.(json|txt)z$" {
+               add_header Content-Encoding  gzip;
+               gzip off;
+               types { application/json jsonz; }
+      }
+
+ * flatfile-to-json.pl: now much faster and more memory-efficient,
+   especially for GFF3 files.  Remember that '###' directives are very
+   important to have in large GFF3 files!  Also removed nonfunctional
+   --extraData switch.
+
+ * Added ability to turn off some JBrowse UI panels via URL arguments
+   to the default index.html, or via arguments to the Browser
+   constructor itself.  Can dynamically turn off the navigation box,
+   the overview panel, and the track list, respectively.  When all of
+   these are off, and if run in an iframe, JBrowse is running in an
+   "embedded mode" that looks similar to the output of GBrowse's
+   gbrowse_img script, with the exception that the view in this case
+   is a fully functioning, scrollable and zoomable JBrowse.  See the
+   GMOD wiki (http://gmod.org/wiki/JBrowse) for more on how to set up
+   embedded mode.  Thanks to Julie Moon, a co-op student working at
+   OICR, for this work!
+
+ * Improved graphical look and feel.
+
+ * Browser support for this release:
+      * Google Chrome 18                perfect
+      * Google Chrome 17                perfect
+      * Mozilla Firefox 11.0            perfect
+      * Mozilla Firefox 10.1            perfect
+      * Mozilla Firefox 10.0.2          perfect
+      * Mozilla Firefox 3.6.28          nonfunctional
+      * Apple Safari 5.1.5 (Lion)       perfect
+      * Microsoft Internet Explorer 9   perfect
+      * Microsoft Internet Explorer 8   good
+      * Microsoft Internet Explorer 7   minor problems
+      * Microsoft Internet Explorer 6   not tested
+      * KDE Konqueror 4.7.4             nonfunctional
+      * KDE Konqueror 4.5.5             nonfunctional
+      * Opera (all versions)            not tested
+
+   NOTE: Internet Explorer 6 is no longer supported by JBrowse.
+
+ * Added an automated-setup script, setup.sh, that tries to install
+   Perl prerequisites, format Volvox example data, and install Wiggle
+   and BAM support (fetching samtools from SVN if necessary)
+   automatically.
+
+ * Navigating to JBrowse with missing or malformed configuration or
+   data will now bring up an error page with useful messages and links
+   to help documentation, instead of a blank white page.
+
+ * JBrowse data directories now include an Apache .htaccess in their
+   root directory that, if mod_headers is installed and AllowOverride
+   FileInfo or AllowOverride All is enabled, will emit the proper HTTP
+   headers to allow cross-origin XHR requests for the data.
+
+ * A new "Help" link in the upper right, or pressing "?" on the
+   keyboard, brings up a "JBrowse Help" dialog box with basic usage
+   information and links to more help information.
+
+ * Arrowheads indicating strandedness are now drawn inside feature
+   boundaries.
+
+ * Clicking on the overview bar or the main scale bar now centers the
+   view at the clicked position.  In addition, while holding down
+   shift, clicking in the main track panel will also center the view
+   at that position.
+
+ * Added bin/remove-track.pl, a script to remove a track from a
+   JBrowse data directory.  Run bin/remove-track.pl -? to see its
+   documentation.
+
+ * Added build instrumentation to support a JSDoc-based system of
+   developer API documentation.  This documentation is still far from
+   complete.
+
+ * Ian Davis contributed code to add a view of the reverse strand of
+   the sequence in the DNA track.  Thanks Ian!
+
+ * Fixed bug in which, for some sequence chunk sizes, the DNA bases
+   would display incorrectly.
+
+ * Added minor gridlines to the main track view.
+
+ * Fixed a long-standing off-by-one bug where the window could not be
+   scrolled to view the last base in the reference sequence.
+
+ * Coordinates displayed in the user interface are now 1-based closed
+   coordinates, which are more familiar to most users.  Previously,
+   the labels displayed interbase (i.e. 0-based half-open)
+   coordinates.
+
+ * NON-BACKWARDS-COMPATIBLE improvements to the JSON format used for
+   track configuration, feature data, and image data
+     - initial support for a new hook system for greater
+       administrator-configurability of feature display
+     - support for more than one level of subfeatures
+
+ * Miscellaneous improvements and refactoring of data-formatting Perl
+   code.
+
+ * More detailed POD-based help documentation on all scripts
+
+ * --tracklabel options to all scripts replaced with --trackLabel.
+
+ * New suite of integration tests, and some unit tests, for
+   server-side Perl code.
+
+ * Beginnings of a suite of Selenium-based integration tests for the
+   front-end JavaScript code.
+
+ * Support for Apple touch-based devices merged into normal
+   index.html, so that the same link can be used regardless of the
+   browsing platform.
+
+ * Bug fixed in which non-stranded features do not display properly
+   (a problem with the CSS styles).
+
+========================================================
+
+version 1.2.1, March 2011
+
+Fixed bugs in release 1.2:
+
+- problems with BED handling reported by Gregg Helt and Brenton Graveley
+
+- performance regression reported by Chris Childers
+
+- incorrect handling of names in ucsc-to-json.pl
+
+- wig2png slowdown reported by Brenton Graveley
+
+========================================================
+
+version 1.2, Febrary 2011
+
+These notes document changes since release 1.1 in September 2010.
+
+Most of the work in this release went into making JBrowse handle large
+amounts of feature data better.  Before, the amount of memory used
+when processing BAM files was more than 10 times the size of the file;
+now, the amount of memory required is fixed.
+
+Other new features in this release:
+
+- Import of UCSC database dumps.  A ucsc-to-json.pl script is now
+  provided for taking database dumps from UCSC and creating a JBrowse
+  instance using them.  The "genePred" and "bed" track types are
+  currently supported; "psl" tracks are not yet supported.
+
+- Touch.  Juan Aguilar's code for using JBrowse on an iOS device
+  (iPhone, iPod touch, iPad) is now integrated.  As of the current
+  release, users wanting to use JBrowse on those devices have to
+  navigate to a separate HTML page (touch.html) rather than the
+  default index.html; i.e. the code does not currently detect
+  touchscreen devices automatically.
+
+- Bug fixes. A number of bugs have also been fixed, including one that
+  restricted the placement of the "data" directory, and a bug in
+  wiggle rendering that caused spurious peaks or troughs at tile
+  boundaries.
+
+Known issues/limitations with this release:
+
+- Some additional CPAN modules are now required:
+
+    PerlIO::gzip
+    Heap::Simple
+    Devel::Size
+
+- No JSON-level backward compatibility. If you are upgrading from an
+  older version of JBrowse, you will have to regenerate all the JSON
+  files on your server. This means wiping your jbrowse/data directory
+  and re-running all server scripts (flatfile-to-json, biodb-to-json,
+  wig-to-json, etc.) to regenerate your data from the original
+  FASTA/GFF/BED/WIG files. We apologize for the inconvenience of this,
+  but it is inevitable sometimes; we do aim to minimize the number of
+  releases which are backwardly-incompatible in this way.
+
+========================================================
+
+version 1.1, September 2010.
+
+These notes document JBrowse developments in the period from July 2009
+(online publication of the first JBrowse paper in Genome Research, the
+de facto "version 1.0") up to September 2010 (the first in a planned
+series of quarterly releases).
+
+New features in this release:
+
+- Scalability. JBrowse can now handle very large data tracks,
+including human EST/SNP tracks, or tracks of next-gen sequence
+reads. Large datasets are broken into smaller chunks, so there is no
+loading delay for big tracks.
+
+- Extensibility. A Perl module (ImageTrackRenderer.pm) for creating
+user-drawn image tracks is now available, based on the CPAN GD.pm
+module. An example program is provided, draw-basepair-track.pl, that
+uses this module to draw arcs over a sequence representing the
+base-pairing interactions of RNA secondary structure.
+
+- Bug fixes. Numerous display glitches have been fixed, including
+issues with wide-screen monitors and long mostly-offscreen features.
+
+Known issues/limitations with this release:
+
+- No JSON-level backward compatibility. If you are upgrading from an
+older version of JBrowse, you will have to regenerate all the JSON
+files on your server. This means wiping your jbrowse/data directory
+and re-running all server scripts (flatfile-to-json, biodb-to-json,
+wig-to-json, etc.) to regenerate your data from the original
+FASTA/GFF/BED/WIG files.
+
+- Next-gen sequence display is currently restricted to the
+co-ordinates of the outermost region to which a single read is
+mapped. There is no support (yet) for displaying pairing between
+reads, sequences of reads, alignment of read to reference sequence
+(e.g. splicing), or mismatches between read and reference.
+
+- Processing SAM/BAM next-gen sequence files takes a lot of memory
+(about 500 megabytes per million features).
+
+- Numerical (as opposed to comparative) readout of the data in Wiggle
+tracks, e.g. via a y-axis label or mouseover popup, is still
+unsupported.
+
+Please visit the website for contact info
+
+http://jbrowse.org/
+
