@@ -22,8 +22,8 @@ def genes(request):
         items = paginator.page(paginator.num_pages)
     return render_to_response('genes.html', {'fullGene': fullGene,'search': search,'items': items},context_instance=RequestContext(request))
 
-def selectedGene(request, geneSymbol):
-    selectedGenes = Gene.objects.filter(officalSymbal = geneSymbol)
+def selectedGene(request, geneSym):
+    selectedGenes = Gene.objects.filter(geneSym = geneSym)
     template = get_template('gene.html')
     html = template.render(Context({'selectedGenes':selectedGenes}))
     return HttpResponse(html)
