@@ -40,7 +40,7 @@
        <tr><th>Gene ID</th><th>Gene Symbol</th><th>Chromosome</th><th width="300px">Evidence</th></tr>
       {% for ost in items.object_list %}
           <tr class="{% cycle altrow,altrow2 %}">
-            <td width="10%">{{ ost.geneId }}</td>
+            <td width="10%"><a href="http://www.ncbi.nlm.nih.gov/gene?term={{ost.geneId}}" >{{ ost.geneId }}</a></td>
             <td width="15%"><a href="{{ost.geneSym}}">{{ost.geneSym}}</a></td>
             <td>{{ost.chromosome}}</td>
             <td width="12%">{{ost.evidence}}</td>
