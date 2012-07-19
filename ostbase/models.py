@@ -50,3 +50,6 @@ class Mirna(models.Model):
 
 class Pathway(models.Model):
     pathwayId = models.BigIntegerField(unique = True)
+    pathwayTerm = models.CharField(max_length = 100)
+    genes = models.CharField(max_length = 1000)
+
