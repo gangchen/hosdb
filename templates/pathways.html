@@ -37,7 +37,7 @@
             <td class="boxfill">
 {% if allPathways %}
      <table class="datatable">
-       <thead><th>Pathway ID</th><th>Pathway Term</th><th width="100px">Associated Genes</th></thead>
+       <thead><th>Pathway ID</th><th>Pathway Term</th><th>Associated Genes</th></thead>
       {% for pathway in items.object_list %}
           <tr class="{% cycle altrow,altrow2 %}">
             <td><a href="http://www.genome.jp/kegg-bin/show_pathway?{{ pathway.pathwayId }}" target="_blank">{{pathway.pathwayId}}</a></td>
