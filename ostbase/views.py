@@ -11,12 +11,13 @@ def genes(request):
     search = request.POST.get('search','')
     if search == "":
 		search = request.GET.get('search','')
-    if(search != "")
+    
+    if search != "":
         selectedGenes = Gene.objects.filter(geneSym = search)
         template = get_template('gene.html')
         html = template.render(Context({'selectedGenes':selectedGenes}))
         return HttpResponse(html)
-    else
+    else:
         fullGene = Gene.objects.all()
         paginator = Paginator(fullGene,10)
         p = request.GET.get('page','')
