@@ -37,13 +37,13 @@
             <td class="boxfill">
 {% if fullGene %}
      <table class="datatable">
-       <tr><th>Gene ID</th><th>Gene Symbol</th><th width="300px">Full Name</th><th>Chromosome</th></tr>
+       <tr><th>Gene ID</th><th>Gene Symbol</th><th>Chromosome</th><th width="300px">Evidence</th></tr>
       {% for ost in items.object_list %}
           <tr class="{% cycle altrow,altrow2 %}">
             <td width="10%">{{ ost.geneId }}</td>
-            <td width="15%"><a href="{{ost.officalSymbal}}">{{ost.officalSymbal}}</a></td>
-            <td>{{ost.officalFullName}}</td>
-            <td width="12%">{{ost.chromosome}}</td>
+            <td width="15%"><a href="{{ost.geneSym}}">{{ost.geneSym}}</a></td>
+            <td>{{ost.chromosome}}</td>
+            <td width="12%">{{ost.evidence}}</td>
           </tr>
        {% endfor %}
      </table>
