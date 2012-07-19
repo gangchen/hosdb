@@ -3,14 +3,14 @@ from django.db import models
 # Create your models here.
 class Gene(models.Model):
     geneId = models.BigIntegerField(unique = True)
-    officalSymbal = models.CharField(max_length = 100)
-    officalFullName = models.CharField(max_length = 300)
-    otherAliases = models.CharField(max_length = 300,blank = True)
-    geneType = models.CharField(max_length = 100)
+    geneSym = models.CharField(max_length = 100)
+    ncbiacc = models.CharField(max_length=20)
     organism = models.CharField(max_length = 100,default='Homo sapiens',editable = False)
     chromosome = models.CharField(max_length = 50)
-    location = models.CharField(max_length = 50)
-    summary = models.CharField(max_length = 3000,blank = True, default='')
+    start = models.CharField(max_length = 20)
+    end = models.CharField(max_length = 20)
+    strand = models.CharField(max_length = 1)
+    evidence = models.CharField(max_length = 200)
 
 class Rna(models.Model):
     regulation = models.CharField(max_length = 10)
