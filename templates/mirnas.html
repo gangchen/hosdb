@@ -40,10 +40,9 @@
        <thead><th>RNA Name</th><th>miRBase Acc</th><th width="300px">evidence</th><th>Chromosome</th></thead>
       {% for ost in items.object_list %}
           <tr class="{% cycle altrow,altrow2 %}">
-            <td><a href="{{ost.rnaname}}">{{ost.rnaName}}</a></td>
-            <td>{{ost.gene}}</td>
+            <td>{{ost.rnaName}}</td>
             <td><a href="http://www.mirbase.org/cgi-bin/query.pl?terms={{ ost.accNum }}">{{ost.accNum}} </a></td>
-            <td>{{ost.evidence}}</td>
+            <td><a href="http://www.ncbi.nlm.nih.gov/pubmed?term={{ ost.evidence }}">{{ost.evidence}} </a></td>
             <td>{{ost.chromosome}}</td>
           </tr>
        {% endfor %}
