@@ -37,11 +37,12 @@
             <td class="boxfill">
 {% if fullGene %}
      <table class="datatable">
-       <thead><th>RNA Name</th><th>Gene </th><th width="300px">evidence</th><th>Chromosome</th></thead>
+       <thead><th>RNA Name</th><th>miRBase Acc</th><th width="300px">evidence</th><th>Chromosome</th></thead>
       {% for ost in items.object_list %}
           <tr class="{% cycle altrow,altrow2 %}">
             <td><a href="{{ost.rnaname}}">{{ost.rnaName}}</a></td>
             <td>{{ost.gene}}</td>
+            <td><a href="http://www.mirbase.org/cgi-bin/query.pl?terms={{ ost.accNum }}">{{ost.accNum}} </a></td>
             <td>{{ost.evidence}}</td>
             <td>{{ost.chromosome}}</td>
           </tr>
