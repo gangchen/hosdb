@@ -1,51 +1,57 @@
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-145","TRUE","Human","FLJ21308","_","chr5","49998569","50173933","n_a","22472569");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-145","FALSE","Human","TMOD3","_","chr15","49909180","49989136","n_a","22472569");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-145","TRUE","Human","IRS1","_","chr2","227308182","227372719","6125","22472569");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-145","FALSE","Mouse","TMOD3","_","chr15","49909180","49989136","n_a","22472569");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-34a","TRUE","Human","E2F3","_","chr6","20510377","20601921","3115","22457788");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-34a","TRUE","Human","CDK6","_","chr6","36754465","36763086","1777","22457788");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-34a","TRUE","Human","CCND1 / Cyclin D1","_","chr2","25309350","25418963","1582","22457788");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-138","FALSE","Human","SLC45A3 / prostein","_","chr1","203893604","203916253","8642","21693595");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-138","TRUE","Human","TERT","_","chr5","1306289","1348162","11730","21693595");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-143","TRUE","Human","MAPK12 / ERK5","_","chr17","19221658","19228445","6874","21427707;20878132");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-143","TRUE","Human","MAPK7","_","chr17","19221659","19227450","6880","21427707;20878132");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-21","TRUE","Human","PTEN","_","chr10","89613175","89718511","9588","20480266");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-21","TRUE","Human","TPM1","Variant 5","chr15","61121891","61151164","12010","20480266");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-21","TRUE","Human","TPM1","Variant 1","chr15","61121891","61151164","12010","20480266");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-21","TRUE","Human","PTEN","_","chr10","89613175","89718511","9588","20480266");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-21","TRUE","Human","PDCD4","_","chr10","112621586","112649753","8763","20480266");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-21","TRUE","Human","PDCD4","_","chr6","36754465","36763086","8763","20480266");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-21","TRUE","Human","PDCD4","_","chr10","112621586","112649753","8763","20480266");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-21","TRUE","Human","SERPINB5","_","chr18","59295199","59323297","8949","20480266");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-21","TRUE","Human","PDCD4","_","chr10","112621586","112649753","8763","20480266");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-140","TRUE","Human","HDAC4","_","chr2","239706636","240058897","14063","19734943");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-101","TRUE","Human","EZH2 / Enx-1","_","chr7","147942122","148019062","3527","19133651");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-101","TRUE","Human","MYCN","_","chr2","16031280","16037726","7559","19133651");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-132","TRUE","Human","PGC / RICS, 250GAP","_","chr11","128343051","128399222","8890","20949564");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-132","TRUE","Rat","RICS / p250GAP","_","chr8","32020613","32041004","n_a","20949564");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-134","TRUE","Mouse","Limk1","_","chr5","132101160","132133509","n_a","22037351");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-134","TRUE","Mouse","Nanog","_","chr6","122657507","122664651","n_a","22037351");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-134","TRUE","Mouse","LRH1","_","chr1","138740853","138857004","n_a","22037351");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-126","FALSE","Human","SLC45A3 / prostein","_","chr1","203893604","203916253","8642","21789031");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-126","TRUE","Human","VCAM1","_","chr1","100957885","100977185","12663","21789031");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-126*","TRUE","Human","SLC45A3 / prostein","_","chr1","203893604","203916253","8642","21789031");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-200b","TRUE","Human","ZEB1 / TCF8","_","chr11","116661627","116692182","11642","21789031");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-200b","TRUE","Mouse","ZEB2 / SIP1","_","chr2","44839154","44972915","n_a","21789031");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-200b","TRUE","Mouse","ZEB1 / TCF8","_","chr18","5591872","5774908","n_a","21789031");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-210","TRUE","Human","EFNA3","_","chr1","153317972","153326628","3223","21789031");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-223","TRUE","Human","NFIA","_","chr1","61260000","61634062","7784","");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-223","TRUE","Mouse","Mef2c","_","n_a","","","n_a","");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-223","TRUE","Human","NFIA","_","chr1","61260000","61634062","7784","21504713");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-223","TRUE","Mouse","Mef2c","_","n_a","","","n_a","21504713");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-221","TRUE","Human","KIT","_","chr4","55365089","55447783","6342","21504713");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-221","TRUE","Human","CDKN1B / KIP1, p2","_","chr12","12761576","12766569","1785","21504713");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-221","TRUE","Human","CDKN1B / KIP1, p2","_","chr12","12761576","12766569","1785","21504713");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-221","TRUE","Human","CDKN1B / KIP1, p2","_","chr12","12761576","12766569","1785","21504713");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-221","TRUE","Human","CDKN1C","_","chr11","2861019","2863555","1786","21504713");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-221","TRUE","Human","CDKN1B / KIP1, p2","_","chr12","12761576","12766569","1785","21504713");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-221","TRUE","Mouse","KIT","_","chr5","74270627","74352096","n_a","21504713");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-199b","TRUE","Human","LAMC2","_","chr1","179887055","179945696","6493","21504713");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-181a","TRUE","Mouse","HOXA11","_","chr6","52189434","52193048","n_a","21504713");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-181a","TRUE","Mouse","CD69","_","chr6","129925286","129933345","n_a","21504713");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-181a","TRUE","Mouse","TCRalpha","_","chr14","45741165","46200074","n_a","21504713");
-INSERT INTO  ostbase_mirna(rnaName,supportType,organism,gene,isoform,chromosome,startPos,endPos,hgncId,evidence) VALUES("miR-181a","TRUE","Mouse","BCL2","_","chr1","106511167","106687250","n_a","21504713");
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-652","human","MI0003667","21789031","chrX","109298557","109298654")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-142-3p","human","MIMAT0000434","21504713","chr17","56408606","56408628")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-127-3p","human","MIMAT0000446","21504713","chr14","101349372","101349393")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-93","human","MI0000095","21959981","chr7","99691391","99691470")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-382","human","MI0000790","21504713","chr14","101520643","101520718")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-140-3p","human","MIMAT0004597","21789031","chr16","69967045","69967065")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-758","human","MI0003757","21504713","chr14","101492357","101492444")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-654-3p","human","MIMAT0004814","21504713","chr14","101506606","101506627")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-369-3p","human","MIMAT0000721","22037351","chr14","101531978","101531998")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-135b","human","MI0000810","21789031","chr1","205417430","205417526")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-21","human","MI0000077","20480266","chr17","57918627","57918698")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-299-5p","human","MIMAT0002890","21504713","chr14","101490137","101490158")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-31","human","MI0000089","21504713","chr9","21512114","21512184")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-132","human","MI0000449","20949564","chr17","1953202","1953302")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-134","human","MIMAT0000447","22037351","chr14","101521031","101521052")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-137","human","MIMAT0000429","21504713","chr1","98511647","98511669")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-126","human","MI0000471","21504713","chr9","139565054","139565138")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-221","human","MI0000298","21504713","chrX","45605585","45605694")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-223","human","MI0000300","21504713","chrX","65238712","65238821")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-542-5p","human","MIMAT0003340","21789031","chrX","133675430","133675452")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-99b","human","MI0000746","20949564","chr19","52195865","52195934")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-410","human","MIMAT0002171","21504713","chr14","101532298","101532318")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-100","human","MI0000102","21504713","chr11","122022937","122023016")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-199b-5p","human","MIMAT0000263","21504713","chr9","131007062","131007084")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-432","human","MI0003133","21504713","chr14","101350820","101350913")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-210","human","MIMAT0000267","21789031","chr11","568112","568133")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-154","human","MI0000480","21504713","chr14","101526092","101526175")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-150","human","MI0000479","21789031","chr19","50004042","50004125")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-454","human","MI0003820","21789031","chr17","57215119","57215233")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-455","human","MI0003513","21789031","chr9","116971714","116971809")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-200b","human","MI0000342","21789031","chr1","1102484","1102578")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-140","human","MI0000456","19734943","chr16","69966984","69967083")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-143","human","MI0000459","21427707；20878132","chr5","148808481","148808586")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-145","human","MI0000461","22472569","chr5","148810209","148810296")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-376c","human","MI0000776","21504713","chr14","101506027","101506092")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-409-5p","human","MIMAT0001638","21504713","chr14","101531651","101531673")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-337-3p","human","MIMAT0000754","21504713","chr14","101340890","101340911")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-199a-3p","human","MIMAT0000232","21666078","chr19","10928105","10928126")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-377","human","MI0000785","21504713","chr14","101528387","101528455")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-198","human","MIMAT0000228","21789031","chr3","120114550","120114571")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-34a","human","MI0000268","22457788","chr1","9211727","9211836")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-195","human","MI0000489","21504713","chr17","6920934","6921020")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-193a-5p","human","MIMAT0004614","20949564","chr17","29887035","29887056")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-148a","human","MI0000253","21504713","chr7","25989539","25989606")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-497","human","MI0003138","21504713","chr17","6921230","6921341")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-495","human","MI0003135","21504713","chr14","101500092","101500173")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-422a","human","MIMAT0001339","20949564","chr15","64163188","64163209")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-543","human","MIMAT0004954","21504713","chr14","101498370","101498391")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-301b","human","MIMAT0004958","21789031","chr22","22007314","22007336")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-18a","human","MI0000072","21789031","chr13","92003005","92003075")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-335","human","MI0000816","21504713","chr7","130135952","130136045")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-660","human","MI0003684","21789031","chrX","49777849","49777945")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-329","human","MIMAT0001629","21504713","chr14","101493488","101493509")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-409-3p","human","MIMAT0001639","21504713","chr14","101531683","101531704")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-511","human","MIMAT0002808","21789031","chr10","18134051","18134071")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-199b","human","MI0000282","21504713","chr9","131007000","131007109")
+INSERT INTO  ostbase_mirna(rnaName, organism, accNum, evidence, chromosome, startPos, endPos) VALUES("hsa-mir-140-5p","human","MIMAT0000431","21789031","chr16","69967006","69967027")

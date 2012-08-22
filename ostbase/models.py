@@ -37,11 +37,8 @@ class Lncrna(Rna):
     
 class Mirna(models.Model):
     rnaName = models.CharField(max_length = 30)
-    supportType = models.CharField(max_length = 30)
     organism = models.CharField(max_length = 50)
-    hgncId = models.CharField(max_length = 30, blank = True, null = True)
-    gene = models.CharField(max_length = 50)
-    isoform = models.CharField(max_length = 50, blank = True, null = True)
+    accNum = models.CharField(max_length = 30)
     evidence = models.CharField(max_length = 100, blank = True, null = True)
     chromosome = models.CharField(max_length = 30, blank = True, null = True)
     startPos = models.CharField(max_length = 30, blank = True, null = True)
