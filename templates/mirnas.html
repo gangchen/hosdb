@@ -42,7 +42,7 @@
           <tr class="{% cycle altrow,altrow2 %}">
             <td>{{ost.rnaName}}</td>
             <td><a href="http://www.mirbase.org/cgi-bin/query.pl?terms={{ ost.accNum }}">{{ost.accNum}} </a></td>
-            <td><a href="http://www.ncbi.nlm.nih.gov/pubmed?term={{ ost.evidence }}">{{ost.evidence}} </a></td>
+            <td><a href="http://www.ncbi.nlm.nih.gov/pubmed?term={{ ost.evidence }}">PMID:{{ost.evidence}} </a></td>
             <td>{{ost.chromosome}}</td>
           </tr>
        {% endfor %}
