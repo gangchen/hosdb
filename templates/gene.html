@@ -11,14 +11,13 @@
             <td class="boxfill">{% if selectedGenes %}
   <table border="1" align="center" class="datatable">
   {% for gene in selectedGenes%}
-    <tr><td>officalSymbal</td><td>{{gene.officalSymbal}}</td></tr>
-    <tr><td>Gene ID</td><td>{{gene.geneId}}</td></tr>
-    <tr><td>Official Full Name</td><td>{{gene.officalFullName}}</td></tr>
-    <tr><td>Aliases</td><td>{{gene.otherAliases}}</td></tr>
-    <tr><td>Type</td><td>{{gene.geneType}}</td></tr>
+    <tr><td>Gene Symbol</td><td>{{gene.geneSym}}</td></tr>
+    <tr><td>Gene ID</td><td><a href="http://www.ncbi.nlm.nih.gov/gene?term={{ ost.geneId }}">{{gene.geneId}}</a></td></tr>
     <tr><td>Organism</td><td>{{gene.organism}}</td></tr>
     <tr><td>Chromosome</td><td>{{gene.chromosome}}</td></tr>
-    <tr><td>Localtion</td><td>{{gene.location}}</td></tr>
+    <tr><td>txStart</td><td>{{gene.start}}</td></tr>
+    <tr><td>txEnd</td><td>{{gene.end}}</td></tr>
+    <tr><td>Evidence</td><td>{{gene.evidence}}</td></tr>
    {% endfor%}
    </table>
 {% else %}

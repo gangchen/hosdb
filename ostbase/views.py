@@ -11,19 +11,26 @@ def genes(request):
     search = request.POST.get('search','')
     if search == "":
 		search = request.GET.get('search','')
-    fullGene = Gene.objects.all()
-    paginator = Paginator(fullGene,10)
-    p = request.GET.get('page','')
-    try:
-        items = paginator.page(p)
-    except PageNotAnInteger:
-        items = paginator.page(1)
-    except EmptyPage:
-        items = paginator.page(paginator.num_pages)
-    return render_to_response('genes.html', {'fullGene': fullGene,'search': search,'items': items},context_instance=RequestContext(request))
+    
+    if search != "":
+        selectedGenes = Gene.objects.filter(geneSym = search)
+        template = get_template('gene.html')
+        html = template.render(Context({'selectedGenes':selectedGenes}))
+        return HttpResponse(html)
+    else:
+        fullGene = Gene.objects.all()
+        paginator = Paginator(fullGene,10)
+        p = request.GET.get('page','')
+        try:
+            items = paginator.page(p)
+        except PageNotAnInteger:
+            items = paginator.page(1)
+        except EmptyPage:
+            items = paginator.page(paginator.num_pages)
+        return render_to_response('genes.html', {'fullGene': fullGene,'search': search,'items': items},context_instance=RequestContext(request))
 
-def selectedGene(request, geneSymbol):
-    selectedGenes = Gene.objects.filter(officalSymbal = geneSymbol)
+def selectedGene(request, geneSym):
+    selectedGenes = Gene.objects.filter(geneSym = geneSym)
     template = get_template('gene.html')
     html = template.render(Context({'selectedGenes':selectedGenes}))
     return HttpResponse(html)
@@ -73,9 +80,26 @@ def selectedLncrna(request, lncrna):
     #return HttpResponse(html)
 
 def pathway(request):
-    template = get_template('pathways.html')
-    html = template.render(Context())
-    return HttpResponse(html)
+    search = request.POST.get('search','')
+    if search == "":
+        search = request.GET.get('search','')
+    
+    if search != "":
+        selectedPathway = Pathway.objects.filter(pathwayId = search)
+        template = get_template('pathway.html')
+        html = template.render(Context({'selectedPathway':selectedPathway}))
+        return HttpResponse(html)
+    else:
+        pathways = Pathway.objects.all()
+        paginator = Paginator(pathways,10)
+        p = request.GET.get('page','')
+        try:
+            items = paginator.page(p)
+        except PageNotAnInteger:
+            items = paginator.page(1)
+        except EmptyPage:
+            items = paginator.page(paginator.num_pages)
+        return render_to_response('pathways.html', {'allPathways': pathways,'search': search,'items': items},context_instance=RequestContext(request))
 
 def selectedPathway(request, pathway):
     template = get_template('pathway.html')

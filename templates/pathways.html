@@ -35,15 +35,14 @@
           <tr>
             <td class="boxl">&nbsp;</td>
             <td class="boxfill">
-{% if fullGene %}
+{% if allPathways %}
      <table class="datatable">
-       <thead><th>Seq Name</th><th>Gene Symbol</th><th width="300px">AssociatedGeneName</th><th>Chromosome</th></thead>
-      {% for ost in items.object_list %}
+       <thead><th>Pathway ID</th><th>Pathway Term</th><th>Associated Genes</th></thead>
+      {% for pathway in items.object_list %}
           <tr class="{% cycle altrow,altrow2 %}">
-            <td><a href="{{ost.seqname}}">{{ost.seqname}}</a></td>
-            <td>{{ost.geneSymbol}}</td>
-            <td>{{ost.associatedGeneName}}</td>
-            <td>{{ost.chromosome}}</td>
+            <td><a href="http://www.genome.jp/kegg-bin/show_pathway?{{ pathway.pathwayId }}" target="_blank">{{pathway.pathwayId}}</a></td>
+            <td>{{pathway.pathwayTerm}}</td>
+            <td>{{pathway.genes}}</td>
           </tr>
        {% endfor %}
      </table>
