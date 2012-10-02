@@ -37,7 +37,7 @@
             <td class="boxfill">
 {% if fullGene %}
      <table class="datatable">
-       <thead><th>Seq Name</th><th>Regulation</th><th>Source</th><th>Gene Symbol</th><th>Gene Acc</th><th>Gene name</th><th>Protein name</th></thead>
+       <thead><th>Seq Name</th><th>Regulation</th><th>Source</th><th>Gene Symbol</th><th>Chromosome</th><th>Gene Acc</th><th>Gene name</th><th>Protein name</th></thead>
       {% for ost in items.object_list %}
           <tr class="{% cycle altrow,altrow2 %}">
             <td>{{ost.seqID }}</td>
