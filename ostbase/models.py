@@ -12,21 +12,16 @@ class Gene(models.Model):
     strand = models.CharField(max_length = 1)
     evidence = models.CharField(max_length = 2000)
 
-class Rna(models.Model):
-    regulation = models.CharField(max_length = 10)
-    rnaType = models.CharField(max_length = 50)
-    source = models.CharField(max_length = 50)
-    seqname = models.CharField(max_length = 100)
-    geneSymbol = models.CharField(max_length = 50, null = True, blank = True)
-    chromosome = models.CharField(max_length = 20)
-    strand = models.CharField(max_length = 20)
-    txStart = models.BigIntegerField()
-    txEnd = models.BigIntegerField()
-
-    class Meta:
-        abstract = True
-
-class Lncrna(Rna):
+class Lncrna(models.Model):
+    seqID = models.CharField(max_length = 20)
+    regulation = models.CharField(max_length = 5)
+    source = models.CharField(max_length = 30)
+    seqName = models.CharField(max_length = 20)
+    geneSymbol = models.CharField(max_length = 20)
+    chromosome = models.CharField(max_length = 10)
+    strand = models.CharField(max_length = 5)
+    txStart = models.CharField(max_length = 20)
+    txEnd = models.CharField(max_length = 20)
     relationship = models.CharField(max_length = 50)
     associatedGeneAcc = models.CharField(max_length = 100, blank = True, null = True)
     associatedGeneName = models.CharField(max_length = 100, blank = True, null = True)

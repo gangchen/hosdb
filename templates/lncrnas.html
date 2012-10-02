@@ -37,13 +37,17 @@
             <td class="boxfill">
 {% if fullGene %}
      <table class="datatable">
-       <thead><th>Seq Name</th><th>Gene Symbol</th><th width="300px">AssociatedGeneName</th><th>Chromosome</th></thead>
+       <thead><th>Seq Name</th><th>Regulation</th><th>Source</th><th>Gene Symbol</th><th>Gene Acc</th><th>Gene name</th><th>Protein name</th></thead>
       {% for ost in items.object_list %}
           <tr class="{% cycle altrow,altrow2 %}">
-            <td><a href="{{ost.seqname}}">{{ost.seqname}}</a></td>
-            <td>{{ost.geneSymbol}}</td>
-            <td>{{ost.associatedGeneName}}</td>
-            <td>{{ost.chromosome}}</td>
+            <td>{{ost.seqID }}</td>
+<td>{{ ost.regulation }}</td>
+<td>{{ ost.source }}</td>
+<td>{{ ost.geneSymbol }}</td>
+<td>{{ ost.chromosome }}</td>
+<td>{{ ost.associatedGeneAcc }}</td>
+<td>{{ ost.associatedGeneName }}</td>
+<td>{{ ost.associatedProteinName }}</td>
           </tr>
        {% endfor %}
      </table>
