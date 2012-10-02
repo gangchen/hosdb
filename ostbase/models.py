@@ -13,11 +13,11 @@ class Gene(models.Model):
     evidence = models.CharField(max_length = 2000)
 
 class Lncrna(models.Model):
-    seqID = models.CharField(max_length = 20)
+    seqID = models.CharField(max_length = 50)
     regulation = models.CharField(max_length = 5)
-    source = models.CharField(max_length = 30)
-    seqName = models.CharField(max_length = 20)
-    geneSymbol = models.CharField(max_length = 20)
+    source = models.CharField(max_length = 50)
+    seqName = models.CharField(max_length = 100)
+    geneSymbol = models.CharField(max_length = 100)
     chromosome = models.CharField(max_length = 10)
     strand = models.CharField(max_length = 5)
     txStart = models.CharField(max_length = 20)
